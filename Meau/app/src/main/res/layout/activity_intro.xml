@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/menu"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/adotar"
+        android:layout_width="260dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="330dip"
+        android:layout_marginLeft="75dip"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/ajudar"
+        android:layout_width="260dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="390dip"
+        android:layout_marginLeft="75dip"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/cadastrar"
+        android:layout_width="260dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="450dip"
+        android:layout_marginLeft="75dip"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="57dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="530dip"
+        android:layout_marginLeft="175dip"
+        android:visibility="invisible" />
+
+</RelativeLayout>
