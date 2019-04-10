@@ -3,7 +3,7 @@
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
-tools:context=".IntroActivity"
+tools:context=".MainActivity"
 android:background="@drawable/intro">
 
     <Button
@@ -12,7 +12,7 @@ android:background="@drawable/intro">
         android:layout_height="match_parent"
         android:clickable="true"
         android:focusable="auto"
-        android:onClick="introScreen [Main Activity]"
+        android:onClick="introScreen"
         android:visibility="invisible" />
 
 </android.support.constraint.ConstraintLayout>

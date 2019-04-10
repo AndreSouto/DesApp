@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/main"
-    tools:context=".MainActivity">
+    tools:context=".IntroActivity">
 
     <Button
         android:id="@+id/menu"
