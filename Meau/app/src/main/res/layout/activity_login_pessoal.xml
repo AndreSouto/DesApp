@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginPessoal"
+    android:background="@drawable/layoutPessoal">
+
+    <!--include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/-->
+
+    <EditText
+        android:layout_width="750px"
+        android:layout_height="20pt"
+        android:text="Nome de Usuário"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="156dp" />
+
+    <EditText
+        android:layout_width="750px"
+        android:layout_height="20pt"
+        android:text="Senha"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="201dp" />
+
+
+    <Button
+        android:id="@+id/logbutton"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:text="Entrar"
+        android:background="@drawable/btnp"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="291dp" />
+
+    <Button
+        android:id="@+id/facebook"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:text="Entrar com facebook"
+        android:background="#194f7c"
+        android:textColor="#f7f7f7"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="410dp" />
+
+    <Button
+        android:id="@+id/google"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:text="Entrar com Google"
+        android:background="#f15f5c"
+        android:textColor="#f7f7f7"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="468dp" />
+
+
+</android.support.constraint.ConstraintLayout>

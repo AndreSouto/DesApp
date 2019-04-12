@@ -10,6 +10,12 @@ public class IntroActivity extends AppCompatActivity {
 
     Button menu,adotar,ajudar,cadastrar,login;
 
+    public void CadastroPessoalScreen(View view){
+        Intent intent = new Intent(this,CadastroPessoal.class);
+        startActivity(intent);
+        finish();
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
