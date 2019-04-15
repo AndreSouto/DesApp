@@ -10,12 +10,6 @@ public class IntroActivity extends AppCompatActivity {
 
     Button menu,adotar,ajudar,cadastrar,login;
 
-    public void CadastroPessoalScreen(View view){
-        Intent intent = new Intent(this,CadastroPessoal.class);
-        startActivity(intent);
-        finish();
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,7 +29,7 @@ public class IntroActivity extends AppCompatActivity {
 //                finish();
 //            }
 //        });
-//
+
 //        adotar.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
@@ -43,7 +37,7 @@ public class IntroActivity extends AppCompatActivity {
 //                finish();
 //            }
 //        });
-//
+
 //        ajudar.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
@@ -51,23 +45,18 @@ public class IntroActivity extends AppCompatActivity {
 //                finish();
 //            }
 //        });
-//
-//        cadastrar.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                startActivity(new Intent(calc.this,Settings.class));
-//                finish();
-//            }
-//        });
-//
-//        login.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                startActivity(new Intent(calc.this,Settings.class));
-//                finish();
-//            }
-//        });
 
+    }
 
+    /* Changing screen */
+    public void LoginPessoalScreen(View view) {
+        Intent intent = new Intent(this, LoginPessoal.class);
+        startActivity(intent);
+    }
+
+    /* Changing screen */
+    public void CadastroPessoalScreen(View view) {
+        Intent intent = new Intent(this, CadastroPessoal.class);
+        startActivity(intent);
     }
 }

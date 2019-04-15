@@ -11,13 +11,6 @@ public class MainActivity extends AppCompatActivity {
 
     Button main;
 
-    /* Changing activity when touching anywhere on the screen */
-    public void introScreen(View view) {
-        Intent intent = new Intent(this, IntroActivity.class);
-        startActivity(intent);
-        finish();
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,5 +18,11 @@ public class MainActivity extends AppCompatActivity {
 
         main = findViewById(R.id.main);
 
+    }
+
+    /* Changing activity when touching anywhere on the screen */
+    public void introScreen(View view) {
+        Intent intent = new Intent(this, IntroActivity.class);
+        startActivity(intent);
     }
 }

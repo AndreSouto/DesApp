@@ -10,38 +10,41 @@
         android:id="@+id/menu"
         android:layout_width="50dp"
         android:layout_height="45dp"
-        android:visibility="invisible" />
+        android:background="#00FFFFFF"
+        android:visibility="visible" />
 
     <Button
         android:id="@+id/adotar"
         android:layout_width="260dp"
         android:layout_height="45dp"
-        android:layout_marginTop="330dip"
         android:layout_marginLeft="75dip"
-        android:visibility="invisible" />
+        android:layout_marginTop="330dip"
+        android:visibility="visible" />
 
     <Button
         android:id="@+id/ajudar"
         android:layout_width="260dp"
         android:layout_height="45dp"
-        android:layout_marginTop="390dip"
         android:layout_marginLeft="75dip"
-        android:visibility="invisible" />
+        android:layout_marginTop="390dip"
+        android:visibility="visible" />
 
     <Button
         android:id="@+id/cadastrar"
         android:layout_width="260dp"
         android:layout_height="45dp"
-        android:layout_marginTop="450dip"
         android:layout_marginLeft="75dip"
-        android:visibility="invisible" />
+        android:layout_marginTop="450dip"
+        android:onClick="CadastroPessoalScreen"
+        android:visibility="visible" />
 
     <Button
         android:id="@+id/login"
         android:layout_width="57dp"
         android:layout_height="40dp"
-        android:layout_marginTop="530dip"
         android:layout_marginLeft="175dip"
-        android:visibility="invisible" />
+        android:layout_marginTop="530dip"
+        android:onClick="LoginPessoalScreen"
+        android:visibility="visible" />
 
 </RelativeLayout>
