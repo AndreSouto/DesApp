@@ -8,43 +8,10 @@ import android.widget.Button;
 
 public class IntroActivity extends AppCompatActivity {
 
-    Button menu,adotar,ajudar,cadastrar,login;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro);
-
-        // Buttons
-        menu = findViewById(R.id.menu);
-        adotar = findViewById(R.id.adotar);
-        ajudar = findViewById(R.id.ajudar);
-        cadastrar = findViewById(R.id.cadastrar);
-        login = findViewById(R.id.login);
-
-//        menu.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                startActivity(new Intent(calc.this,Settings.class));
-//                finish();
-//            }
-//        });
-
-//        adotar.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                startActivity(new Intent(calc.this,Settings.class));
-//                finish();
-//            }
-//        });
-
-//        ajudar.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                startActivity(new Intent(calc.this,Settings.class));
-//                finish();
-//            }
-//        });
 
     }
 
@@ -59,4 +26,17 @@ public class IntroActivity extends AppCompatActivity {
         Intent intent = new Intent(this, CadastroPessoal.class);
         startActivity(intent);
     }
+
+    /* Changing activity when touching anywhere on the screen */
+    public void AjudarScreen(View view) {
+        Intent intent = new Intent(this, AjudarActivity.class);
+        startActivity(intent);
+    }
+
+    /* Changing activity when touching anywhere on the screen */
+    public void AdotarScreen(View view) {
+        Intent intent = new Intent(this, AdotarActivity.class);
+        startActivity(intent);
+    }
+
 }

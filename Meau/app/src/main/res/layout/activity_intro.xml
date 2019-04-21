@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,7 +10,7 @@
     <Button
         android:id="@+id/menu"
         android:layout_width="50dp"
-        android:layout_height="45dp"
+        android:layout_height="30dp"
         android:background="#00FFFFFF"
         android:visibility="visible" />
 
@@ -19,6 +20,10 @@
         android:layout_height="45dp"
         android:layout_marginLeft="75dip"
         android:layout_marginTop="330dip"
+        android:layout_marginBottom="15dp"
+        android:background="#FDD258"
+        android:onClick="AdotarScreen"
+        android:text="ADOTAR"
         android:visibility="visible" />
 
     <Button
@@ -26,7 +31,10 @@
         android:layout_width="260dp"
         android:layout_height="45dp"
         android:layout_marginLeft="75dip"
-        android:layout_marginTop="390dip"
+        android:layout_marginTop="395dip"
+        android:background="#FDD258"
+        android:onClick="AjudarScreen"
+        android:text="AJUDAR"
         android:visibility="visible" />
 
     <Button
@@ -34,8 +42,10 @@
         android:layout_width="260dp"
         android:layout_height="45dp"
         android:layout_marginLeft="75dip"
-        android:layout_marginTop="450dip"
+        android:layout_marginTop="467dip"
+        android:background="#FDD258"
         android:onClick="CadastroPessoalScreen"
+        android:text="CADASTRAR ANIMAL"
         android:visibility="visible" />
 
     <Button
@@ -44,7 +54,18 @@
         android:layout_height="40dp"
         android:layout_marginLeft="175dip"
         android:layout_marginTop="530dip"
+        android:background="#00FFFFFF"
         android:onClick="LoginPessoalScreen"
+        android:text="Login"
+        android:textColor="#87C8BE"
         android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="350dp"
+        android:layout_height="280dp"
+        android:layout_marginLeft="35dip"
+        android:layout_marginTop="280dip"
+        android:background="#F9F9F9" />
 
 </RelativeLayout>
