@@ -13,6 +13,12 @@ public class CadastroActivity extends AppCompatActivity {
         setContentView(R.layout.activity_cadastro);
     }
 
+    /* Changing activity when touching anywhere on the screen */
+    public void introScreen(View view) {
+        Intent intent = new Intent(this, IntroActivity.class);
+        startActivity(intent);
+    }
+
     /* Changing screen */
     public void LoginPessoalScreen(View view) {
         Intent intent = new Intent(this, LoginPessoal.class);

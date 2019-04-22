@@ -1,27 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginPessoal"
-    android:background="@drawable/login">
+    android:background="@drawable/login"
+    tools:context=".LoginPessoal">
 
-    <EditText
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbarlogin"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="450dp"
+        android:layout_height="700dp"
+        android:layout_marginTop="80dip"
+        android:background="#FFFFFF" />
+
+    <android.support.v7.widget.AppCompatEditText
         android:layout_width="380dp"
         android:layout_height="20pt"
-        android:background="#F8F8F8"
-        android:text="Nome de Usuário"
-        tools:layout_editor_absoluteX="27dp"
-        tools:layout_editor_absoluteY="156dp" />
+        android:hint="Nome de Usuário"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="150dip"
+        android:backgroundTint="#0c53e2"/>
 
-    <EditText
+
+    <android.support.v7.widget.AppCompatEditText
         android:layout_width="380dp"
         android:layout_height="20pt"
-        android:background="#F8F8F8"
-        android:text="Senha"
-        tools:layout_editor_absoluteX="27dp"
-        tools:layout_editor_absoluteY="201dp" />
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="200dip"
+        android:backgroundTint="#0c53e2"
+        android:inputType="textPassword"
+        android:hint="Senha" />
 
 
     <Button
@@ -29,9 +43,16 @@
         android:layout_width="260dp"
         android:layout_height="wrap_content"
         android:background="@drawable/btnp"
-        android:text="Entrar"
-        tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="291dp" />
+        android:layout_marginLeft="75dip"
+        android:layout_marginTop="300dip"
+        android:text="Entrar" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="2dip"
+        android:background="#00FFFFFF" />
 
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>

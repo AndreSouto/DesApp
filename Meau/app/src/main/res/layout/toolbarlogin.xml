@@ -8,21 +8,21 @@
     app:titleTextAppearance="@style/TextAppearance.AppCompat">
 
     <ImageButton
-        android:layout_width="wrap_content"
+        android:layout_width="35dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="16dp"
         android:layout_weight="5"
-        android:background="@drawable/ic_arrow_back" />
+        android:background="@drawable/menu_button" />
 
     <TextView
         android:id="@+id/Topintitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Cadastro"
+        android:text="Login"
         android:textColor="@color/fontColor1"
         android:textSize="10pt" />
 

@@ -7,4 +7,9 @@
     android:background="@drawable/ajudar"
     tools:context=".AjudarActivity">
 
+    <!--<include-->
+        <!--android:id="@+id/toolbar"-->
+        <!--layout="@layout/toolbarajudar"-->
+        <!--android:visibility="visible" />-->
+
 </android.support.constraint.ConstraintLayout>
