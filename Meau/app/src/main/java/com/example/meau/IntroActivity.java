@@ -23,7 +23,7 @@ public class IntroActivity extends AppCompatActivity {
 
     /* Changing screen */
     public void CadastroPessoalScreen(View view) {
-        Intent intent = new Intent(this, CadastroPessoal.class);
+        Intent intent = new Intent(this, CadastroActivity.class);
         startActivity(intent);
     }
 
