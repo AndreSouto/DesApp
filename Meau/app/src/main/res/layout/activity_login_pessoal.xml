@@ -43,7 +43,7 @@
         android:layout_width="260dp"
         android:layout_height="wrap_content"
         android:background="@drawable/btnp"
-        android:layout_marginLeft="75dip"
+        android:layout_marginLeft="50dip"
         android:layout_marginTop="300dip"
         android:text="Entrar" />
 
