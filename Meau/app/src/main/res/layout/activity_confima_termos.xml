@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background1"
+    tools:context=".ConfimaTermos">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbartermoadocao_ret"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        >
+        
+        <TextView
+            android:layout_marginTop="52dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/courgetteregular"
+            android:text="Pronto!"
+            android:textSize="53dp"
+            android:textColor="@color/LightestGreen"
+            android:layout_marginBottom="52dp"
+            android:layout_marginLeft="130dp"
+            />
+        
+        <TextView
+            android:layout_marginLeft="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O termo já foi enviado para o seu email.
+Caso não tenha recebido, verifique se o
+seu email está cadastrado
+corretamente na área “meu perfil”, no
+menu principal."
+            android:textSize="14dp"
+            />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Para entender um pouco mais sobre as
+leis que envolvem esse processo,
+acesse nossa área de legislação!"
+            android:textSize="14dp"
+            />
+
+        <Button
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="300dp"
+            android:layout_width="232dp"
+            android:layout_height="40dp"
+            android:text="Legislação"
+            android:background="@drawable/btnp"
+            />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
