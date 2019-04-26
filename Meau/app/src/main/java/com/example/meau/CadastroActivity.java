@@ -33,7 +33,7 @@ public class CadastroActivity extends AppCompatActivity {
 
     /* Changing screen */
     public void CadastrarScreen(View view) {
-        Intent intent = new Intent(this, LoginPessoal.class);
+        Intent intent = new Intent(this, CadastroPessoalActivity.class);
         startActivity(intent);
     }
 

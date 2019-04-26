@@ -34,15 +34,16 @@ tools:context=".CadastroActivity">
         android:textSize="12dp"
         android:visibility="visible" />
 
-<Button
-    android:id="@+id/cadastrpessoal"
-    android:layout_width="261dp"
-    android:layout_height="wrap_content"
-    android:layout_marginLeft="45dip"
-    android:layout_marginTop="310dip"
-    android:background="@drawable/btnp"
-    android:text="FAZER CADASTRO"
-    android:textSize="12dp" />
+    <Button
+        android:id="@+id/cadastrpessoal"
+        android:layout_width="261dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dip"
+        android:layout_marginTop="310dip"
+        android:background="@drawable/btnp"
+        android:onClick="CadastrarScreen"
+        android:text="FAZER CADASTRO"
+        android:textSize="12dp" />
 
 <TextView
     android:id="@+id/wmessage"

@@ -8,12 +8,15 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 
+import com.google.firebase.FirebaseApp;
+
 public class IntroActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro);
+        FirebaseApp.initializeApp(this);
 
         Window window = getWindow();
         int statusBarColor = Color.parseColor("#FFFDC72E");
