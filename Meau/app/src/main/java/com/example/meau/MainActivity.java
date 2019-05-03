@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,9 +17,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         main = findViewById(R.id.main);
+
     }
 
-    /** Changing activity when touching anywhere on the screen */
+    /* Changing activity when touching anywhere on the screen */
     public void introScreen(View view) {
         Intent intent = new Intent(this, IntroActivity.class);
         startActivity(intent);

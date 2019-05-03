@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context=".LoginPessoal">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbarlogin"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="450dp"
+        android:layout_height="700dp"
+        android:layout_marginTop="80dip"
+        android:background="#FFFFFF" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_width="380dp"
+        android:layout_height="20pt"
+        android:hint="Nome de Usuário"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="150dip"
+        android:backgroundTint="#0c53e2"/>
+
+
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_width="380dp"
+        android:layout_height="20pt"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="200dip"
+        android:backgroundTint="#0c53e2"
+        android:inputType="textPassword"
+        android:hint="Senha" />
+
+
+    <Button
+        android:id="@+id/logbutton"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btnp"
+        android:layout_marginLeft="50dip"
+        android:layout_marginTop="300dip"
+        android:text="Entrar" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="2dip"
+        android:background="#00FFFFFF" />
+
+
+</RelativeLayout>

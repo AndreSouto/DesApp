@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastroPessoalActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbarcadastropessoal"
+        android:visibility="visible" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/nome"
+        android:layout_width="380dp"
+        android:layout_height="20pt"
+        android:hint="Nome Completo"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="100dip" />
+
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/idade"
+        android:layout_width="380dp"
+        android:layout_height="20pt"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="140dip"
+        android:hint="Idade" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/email"
+        android:layout_width="380dp"
+        android:layout_height="20pt"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="180dip"
+        android:hint="E-mail" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/estado"
+        android:layout_width="380dp"
+        android:layout_height="20pt"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="220dip"
+        android:hint="Estado" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/cidade"
+        android:layout_width="380dp"
+        android:layout_height="20pt"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="260dip"
+        android:hint="Cidade" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/endereco"
+        android:layout_width="380dp"
+        android:layout_height="20pt"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="300dip"
+        android:hint="Endereço" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/telefone"
+        android:layout_width="380dp"
+        android:layout_height="20pt"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="340dip"
+        android:hint="Telefone" />
+
+
+    <Button
+        android:id="@+id/logbutton"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dip"
+        android:layout_marginTop="600dip"
+        android:background="@drawable/btnp"
+        android:onClick="cadastrarPessoa"
+        android:text="FAZER CADASTRO" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="2dip"
+        android:background="#00FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="75dip"
+        android:text="INFORMAÇÕES PESSOAIS"
+        android:textColor="@color/fontColor2"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="400dip"
+        android:text="INFORMAÇÕES DE PERFIL"
+        android:textColor="@color/fontColor2"
+        android:textSize="18sp" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/nomeusuario"
+        android:layout_width="380dp"
+        android:layout_height="20pt"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="440dip"
+        android:hint="Nome de usuário" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/senha"
+        android:layout_width="380dp"
+        android:layout_height="20pt"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="480dip"
+        android:inputType="textPassword"
+        android:hint="Senha" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/confsenha"
+        android:layout_width="380dp"
+        android:layout_height="20pt"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="520dip"
+        android:inputType="textPassword"
+        android:hint="Confirmação de senha" />
+
+
+</RelativeLayout>
