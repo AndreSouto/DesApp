@@ -11,10 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CadastroPessoalActivity"/>
+        <activity android:name=".Privacidade"/>
+        <activity android:name=".CadastroPessoalActivity" />
         <activity android:name=".CadastroActivity" />
-        <activity android:name=".TermoAdocao"/>
-        <activity android:name=".ConfimaTermos"/>
+        <activity android:name=".TermoAdocao" />
+        <activity android:name=".ConfimaTermos" />
         <activity android:name=".AjudarActivity" />
         <activity android:name=".AdotarActivity" />
         <activity android:name=".LoginPessoal" />

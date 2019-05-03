@@ -32,7 +32,7 @@
             />
         
         <TextView
-            android:layout_marginLeft="70dp"
+            android:layout_marginLeft="45dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="O termo já foi enviado para o seu email.
@@ -40,7 +40,8 @@ Caso não tenha recebido, verifique se o
 seu email está cadastrado
 corretamente na área “meu perfil”, no
 menu principal."
-            android:textSize="14dp"
+            android:textSize="7pt"
+            android:gravity="center"
             />
 
         <TextView
@@ -51,7 +52,8 @@ menu principal."
             android:text="Para entender um pouco mais sobre as
 leis que envolvem esse processo,
 acesse nossa área de legislação!"
-            android:textSize="14dp"
+            android:textSize="7pt"
+            android:gravity="center"
             />
 
         <Button
@@ -59,6 +61,7 @@ acesse nossa área de legislação!"
             android:layout_marginTop="200dp"
             android:layout_width="232dp"
             android:layout_height="40dp"
+            android:id="@+id/legs"
             android:text="Legislação"
             android:background="@drawable/btnp"
             />
