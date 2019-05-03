@@ -17,6 +17,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
         >
         
         <TextView
@@ -28,11 +29,10 @@
             android:textSize="53dp"
             android:textColor="@color/LightestGreen"
             android:layout_marginBottom="52dp"
-            android:layout_marginLeft="130dp"
+            android:layout_marginLeft="110dp"
             />
         
         <TextView
-            android:layout_marginLeft="45dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="O termo já foi enviado para o seu email.
@@ -46,7 +46,6 @@ menu principal."
 
         <TextView
             android:layout_marginTop="20dp"
-            android:layout_marginLeft="70dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Para entender um pouco mais sobre as
@@ -57,7 +56,7 @@ acesse nossa área de legislação!"
             />
 
         <Button
-            android:layout_marginLeft="100dp"
+            android:layout_marginLeft="75dip"
             android:layout_marginTop="200dp"
             android:layout_width="232dp"
             android:layout_height="40dp"

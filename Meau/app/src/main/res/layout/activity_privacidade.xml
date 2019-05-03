@@ -98,9 +98,8 @@ dos eventos da semana."
         <Button
             android:layout_width="232dp"
             android:layout_height="40dp"
-            android:textSize="5pt"
             android:layout_marginTop="60dp"
-            android:layout_marginLeft="50dp"
+            android:layout_marginLeft="55dip"
             android:textColor="@color/fontColor5"
             android:background="@drawable/btnp_gray"
             android:text="SALVAR ALTERAÇÕES"/>
