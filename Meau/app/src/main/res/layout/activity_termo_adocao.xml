@@ -8,7 +8,7 @@
     tools:context=".TermoAdocao">
 
     <include
-        android:id="@+id/toolbar"
+        android:id="@+id/toolbarAdocao"
         layout="@layout/toolbartermoadocao"
         android:visibility="visible" />
 
@@ -71,6 +71,7 @@ em seu email o termo em questão, nos formatos
             android:layout_width="232dp"
             android:layout_height="40dp"
             android:background="@drawable/btnp"
+            android:id="@+id/termoadocaobutao"
             android:text="Termo de Adoção"/>
 
         <Button
@@ -79,6 +80,7 @@ em seu email o termo em questão, nos formatos
             android:layout_width="232dp"
             android:layout_height="40dp"
             android:background="@drawable/btnp"
+            android:id="@+id/termoapadrinhamentobotao"
             android:text="Termo de Apadrinhamento"
             android:layout_marginBottom="24dp"
             />
