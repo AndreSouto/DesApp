@@ -30,7 +30,6 @@ public class CadastroPessoalActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro_pessoal);
-        //FirebaseApp.initializeApp(this);
 
         nome = findViewById(R.id.nome);
         idade = findViewById(R.id.idade);
@@ -58,6 +57,8 @@ public class CadastroPessoalActivity extends AppCompatActivity {
         usuario.setCity(cidade.getText().toString());
         usuario.setPhoneNumber(telefone.getText().toString());
         usuario.setNameUsu(nomeusu.getText().toString());
+        usuario.setEmail(email.getText().toString());
+        usuario.setPassword(senha.getText().toString());
 
         return usuario;
 

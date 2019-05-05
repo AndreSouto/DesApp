@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Privacidade"/>
+        <activity android:name=".ProfileActivity"></activity>
+        <activity android:name=".Privacidade" />
         <activity android:name=".CadastroPessoalActivity" />
         <activity android:name=".CadastroActivity" />
         <activity android:name=".TermoAdocao" />

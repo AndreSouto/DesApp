@@ -45,7 +45,7 @@ public class LoginPessoal extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if(task.isSuccessful()){
-                                startActivity(new Intent(LoginPessoal.this, ConfimaTermos.class));
+                                startActivity(new Intent(LoginPessoal.this, ProfileActivity.class));
                             }
                             else{
                                 Toast.makeText(LoginPessoal.this, task.getException().getMessage(),
