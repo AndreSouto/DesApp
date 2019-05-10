@@ -17,6 +17,7 @@
         <activity android:name=".Alec" />
         <activity android:name=".Bidu" />
         <activity android:name=".Pequi" />
+        <activity android:name=".ProfileActivity"></activity>
         <activity android:name=".Privacidade" />
         <activity android:name=".CadastroPessoalActivity" />
         <activity android:name=".CadastroActivity" />
