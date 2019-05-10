@@ -1,15 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ajudar"
-    tools:context=".AjudarActivity">
+    tools:context="AjudarActivity">
 
-    <!--<include-->
-        <!--android:id="@+id/toolbar"-->
-        <!--layout="@layout/toolbarajudar"-->
-        <!--android:visibility="visible" />-->
+    <include
+        layout="@layout/toolbarajudar"
+        android:visibility="visible" />
 
-</android.support.constraint.ConstraintLayout>
+    <ImageButton
+        android:id="@+id/margot"
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:layout_weight="5"
+        android:background="@drawable/margot"
+        tools:layout_editor_absoluteY="50dp"
+        android:contentDescription="TODO"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/marie"
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:layout_weight="5"
+        android:background="@drawable/marie"
+        android:contentDescription="TODO"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="270dp" />
+
+    <ImageButton
+        android:id="@+id/sancho"
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:layout_weight="5"
+        android:background="@drawable/sancho"
+        android:contentDescription="TODO"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="490dp" />
+
+</LinearLayout>
