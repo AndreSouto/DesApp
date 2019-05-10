@@ -20,15 +20,17 @@
         android:background="#FFFFFF" />
 
     <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/email"
         android:layout_width="380dp"
         android:layout_height="20pt"
-        android:hint="Nome de Usuário"
+        android:hint="Email"
         android:layout_marginLeft="15dip"
         android:layout_marginTop="150dip"
         android:backgroundTint="#0c53e2"/>
 
 
     <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/password"
         android:layout_width="380dp"
         android:layout_height="20pt"
         android:layout_marginLeft="15dip"
@@ -42,9 +44,10 @@
         android:id="@+id/logbutton"
         android:layout_width="260dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/btnp"
         android:layout_marginLeft="50dip"
         android:layout_marginTop="300dip"
+        android:background="@drawable/btnp"
+        android:onClick="loginUsr"
         android:text="Entrar" />
 
     <Button
