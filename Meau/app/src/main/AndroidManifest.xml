@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AjudaCadastro"></activity>
+        <activity android:name=".SucessoCadastroAnimal"></activity>
+        <activity android:name=".AjudaCadastro" />
         <activity android:name=".ApadrinhamentoCadastro" />
         <activity android:name=".AdocaoCadastro" />
         <activity android:name=".Sancho" />
