@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdocaoCadastro">
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/toolbar_cadastro_animal"
+        android:visibility="visible" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_marginTop="69dp"
+        tools:layout_marginLeft="24dp"
+        tools:layout_marginRight="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="Tenho interesse em cadastrar o animal para:" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/adocao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btnp_yellow"
+                    android:textColor="@color/fontColor5"
+                    android:text="Adoção" />
+
+                <Button
+                    android:id="@+id/apadrinhar"
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btnp_default"
+                    android:textColor="@color/GrayLightest"
+                    android:text="Apadrinhar" />
+
+                <Button
+                    android:id="@+id/ajuda"
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/fontColor5"
+                    android:background="@drawable/btnp_default"
+                    android:text="Ajuda" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adoção"
+                android:textSize="16sp"
+                android:textColor="@color/fontColor5"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/fontColor6"
+                android:textSize="12sp"
+                android:text="NOME DO ANIMAL"/>
+
+            <EditText
+                android:id="@+id/nomeanimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:style="@style/edttext"
+                android:text="Nome do animal"
+                />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/fontColor6"
+                android:textSize="12sp"
+                android:text="FOTOS DO ANIMAL"/>
+
+            <Button
+                android:id="@+id/addfoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btnp_default_noradius"
+                android:textColor="@color/LightGray"
+                android:text="adicionar Fotos"
+                android:drawableTop="@android:drawable/ic_menu_add" />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/fontColor6"
+                android:textSize="12sp"
+                android:text="ESPÉCIE"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:style="@style/llyt1">
+
+                <RadioButton
+                    android:id="@+id/cachorro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:style="@style/firstlinearbox"
+                    android:text="Cachorro" />
+
+                <RadioButton
+                    android:id="@+id/gato"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:style="@style/linearbox"
+                    android:text="Gato" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/fontColor6"
+                android:textSize="12sp"
+                android:text="SEXO"/>
+
+            <LinearLayout
+                android:style="@style/llyt1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/macho"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:style="@style/firstlinearbox"
+                    android:text="Macho"/>
+
+                <RadioButton
+                    android:id="@+id/femea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:style="@style/linearbox"
+                    android:text="Fêmea"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/fontColor6"
+                android:textSize="12sp"
+                android:text="PORTE"/>
+
+            <LinearLayout
+                android:style="@style/llyt1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/pequeno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:style="@style/firstlinearbox"
+                    android:text="Pequeno"/>
+
+                <RadioButton
+                    android:id="@+id/medio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:style="@style/linearbox"
+                    android:text="Médio"/>
+
+                <RadioButton
+                    android:id="@+id/grande"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:style="@style/linearbox"
+                    android:text="Grande"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/fontColor6"
+                android:textSize="12sp"
+                android:text="IDADE"/>
+
+            <LinearLayout
+                android:style="@style/llyt1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/filhote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:style="@style/firstlinearbox"
+                    android:text="Filhote"/>
+
+                <RadioButton
+                    android:id="@+id/adulto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:style="@style/linearbox"
+                    android:text="Adulto"/>
+
+                <RadioButton
+                    android:id="@+id/idoso"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:style="@style/linearbox"
+                    android:text="Idoso"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/fontColor6"
+                android:textSize="12sp"
+                android:text="TEMPERAMENTO"/>
+
+
+            <LinearLayout
+                android:style="@style/llyt1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/brincalhao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:style="@style/firstlinearbox"
+                    android:text="Brincalhão"/>
+
+                <CheckBox
+                    android:id="@+id/timido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:style="@style/linearbox"
+                    android:text="Tímido"
+                    />
+
+                <CheckBox
+                    android:id="@+id/calmo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:style="@style/linearbox"
+                    android:text="Calmo"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:style="@style/llyt2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/guarda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:style="@style/firstlinearbox"
+                    android:text="Guarda"/>
+
+                <CheckBox
+                    android:id="@+id/amoroso"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:style="@style/linearbox"
+                    android:text="Amoroso"
+                    />
+
+                <CheckBox
+                    android:id="@+id/preguiçoso"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:style="@style/linearbox"
+                    android:text="Preguiçoso"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/fontColor6"
+                android:textSize="12sp"
+                android:text="SAÚDE"/>
+
+            <LinearLayout
+                android:style="@style/llyt1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/vacinado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:style="@style/firstlinearbox"
+                    android:text="Vacinado"/>
+
+                <CheckBox
+                    android:id="@+id/vermifugado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:style="@style/linearbox"
+                    android:text="Vermifugado"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:style="@style/llyt2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/castrado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:style="@style/firstlinearbox"
+                    android:text="Castrado"/>
+
+                <CheckBox
+                    android:id="@+id/doente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:style="@style/linearbox"
+                    android:text="Doente"
+                    />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/doencas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:style="@style/edttext"
+                android:text="Doenças do Animal"
+                />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/fontColor6"
+                android:textSize="12sp"
+                android:text="EXIGÊNCIAS PARA ADOÇÃO"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <CheckBox
+                    android:id="@+id/checktermoad"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:style="@style/firstlinearbox"
+                    android:text="Termo de Adoção"
+                    />
+
+                <CheckBox
+                    android:id="@+id/fotoscasa"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:style="@style/bh"
+                    android:text="Fotos da Casa"
+                    />
+
+                <CheckBox
+                    android:id="@+id/visitaprevia"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:style="@style/bh"
+                    android:text="Visita Prévia do Animal"
+                    />
+
+                <CheckBox
+                    android:id="@+id/acompanhamento"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:style="@style/bh"
+                    android:text="Acompanhamento pós adoção"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="60dp"
+                >
+
+                <CheckBox
+                    android:id="@+id/ummes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:style="@style/bh2"
+                    android:text="1 mês"
+                    />
+
+                <CheckBox
+                    android:id="@+id/tresmes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:style="@style/bh2"
+                    android:text="3 mêses"
+                    />
+
+                <CheckBox
+                    android:id="@+id/seismes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:style="@style/bh2"
+                    android:text="6 meses"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/fontColor6"
+                android:textSize="12sp"
+                android:text="SOBRE O ANIMAL"/>
+
+            <EditText
+                android:id="@+id/historia"
+                android:layout_marginTop="20dp"
+                android:style="@style/edttext2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Compartilhe a história do animal"
+                />
+
+            <Button
+                android:id="@+id/colocar_adocao"
+                android:layout_width="232dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="28dp"
+                android:layout_marginLeft="60dp"
+                android:background="@drawable/btnp_yellow"
+                android:text="Colocar para adoção"
+                />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
