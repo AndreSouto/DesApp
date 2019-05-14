@@ -112,27 +112,26 @@
                 android:textSize="12sp"
                 android:text="ESPÉCIE"/>
 
-            <LinearLayout
+            <RadioGroup
+                android:id="@+id/especie"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
                 android:style="@style/llyt1">
 
                 <RadioButton
-                    android:id="@+id/cachorro"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:style="@style/firstlinearbox"
                     android:text="Cachorro" />
 
                 <RadioButton
-                    android:id="@+id/gato"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:style="@style/linearbox"
                     android:text="Gato" />
 
-            </LinearLayout>
+            </RadioGroup>
 
             <TextView
                 android:layout_marginTop="20dp"
@@ -142,27 +141,26 @@
                 android:textSize="12sp"
                 android:text="SEXO"/>
 
-            <LinearLayout
+            <RadioGroup
+                android:id="@+id/sexo"
                 android:style="@style/llyt1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
                 <RadioButton
-                    android:id="@+id/macho"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:style="@style/firstlinearbox"
                     android:text="Macho"/>
 
                 <RadioButton
-                    android:id="@+id/femea"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:style="@style/linearbox"
                     android:text="Fêmea"/>
 
-            </LinearLayout>
+            </RadioGroup>
 
             <TextView
                 android:layout_marginTop="20dp"
@@ -172,34 +170,32 @@
                 android:textSize="12sp"
                 android:text="PORTE"/>
 
-            <LinearLayout
+            <RadioGroup
+                android:id="@+id/porte"
                 android:style="@style/llyt1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
                 <RadioButton
-                    android:id="@+id/pequeno"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:style="@style/firstlinearbox"
                     android:text="Pequeno"/>
 
                 <RadioButton
-                    android:id="@+id/medio"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:style="@style/linearbox"
                     android:text="Médio"/>
 
                 <RadioButton
-                    android:id="@+id/grande"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:style="@style/linearbox"
                     android:text="Grande"/>
 
-            </LinearLayout>
+            </RadioGroup>
 
             <TextView
                 android:layout_marginTop="20dp"
@@ -209,34 +205,32 @@
                 android:textSize="12sp"
                 android:text="IDADE"/>
 
-            <LinearLayout
+            <RadioGroup
+                android:id="@+id/idade"
                 android:style="@style/llyt1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
                 <RadioButton
-                    android:id="@+id/filhote"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:style="@style/firstlinearbox"
                     android:text="Filhote"/>
 
                 <RadioButton
-                    android:id="@+id/adulto"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:style="@style/linearbox"
                     android:text="Adulto"/>
 
                 <RadioButton
-                    android:id="@+id/idoso"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:style="@style/linearbox"
                     android:text="Idoso"/>
 
-            </LinearLayout>
+            </RadioGroup>
 
             <TextView
                 android:layout_marginTop="20dp"
