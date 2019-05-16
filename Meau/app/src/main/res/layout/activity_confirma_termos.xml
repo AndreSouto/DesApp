@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background1"
+    tools:context=".ConfirmaTemos">
+
+    <include
+        android:id="@+id/toolbarAdocao"
+        layout="@layout/toolbartermoadocao"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_marginTop="76dp"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:text="O termo de adoção é um termo que oficializa o
+    processo de adoção de um animal. Similarmente
+    funciona o termo de apadrinhamento." />
+
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:text="O termo de adoção é um termo que oficializa o
+    processo de adoção de um animal. Similarmente
+    funciona o termo de apadrinhamento." />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:text="É importante que o doador/dono exija a
+assinatura deste termo por parte do
+adotante/padrinho, de forma a ter prova legal de
+que a pessoa adquiriu o animal. Assim, podem
+ser tomadas providências legais em caso de
+maus tratos ou negligência do animal." />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:text="Para facilitar o processo, o Meau disponibiliza o
+termo aos seus doadores e donos de animais
+que utilizam o aplicativo para encontrar um
+destino e/ou ajuda para seu bichinho. Este termo
+é enviado por email para que possa ser feita a
+impressão e, no momento da entrega do animal
+(ou quando o padrinho vai conhecer), a
+assinatura por parte do adotante/padrinho." />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:text="Pressionando os botões abaixo você receberá
+em seu email o termo em questão, nos formatos
+.word e .pdf." />
+
+        <Button
+            android:layout_marginLeft="55dip"
+            android:layout_marginTop="20dp"
+            android:layout_width="232dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btnp"
+            android:id="@+id/termoadocaobutao"
+            android:text="Termo de Adoção"/>
+
+        <Button
+            android:layout_marginLeft="55dip"
+            android:layout_marginTop="8dp"
+            android:layout_width="232dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btnp"
+            android:id="@+id/termoapadrinhamentobotao"
+            android:text="Termo de Apadrinhamento"
+            android:layout_marginBottom="24dp"
+            />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

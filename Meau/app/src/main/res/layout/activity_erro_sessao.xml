@@ -9,12 +9,7 @@
 
     <include
         android:id="@+id/toolbar"
-        layout="@layout/template_toolbar"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></include>
+        layout="@layout/toolbarcadastropessoal"></include>
 
     <ScrollView
         android:id="@+id/err_sessao_parent_SV"
@@ -63,7 +58,7 @@
                 android:fontFamily="@font/roboto"
                 android:text="@string/cad_pessoa_fazercadastro"
                 android:textColor="@color/colorTitle"
-                android:textSize="12sp"
+                android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/err_sessao_msg_erro" />
@@ -90,7 +85,7 @@
                 android:fontFamily="@font/roboto"
                 android:text="@string/login"
                 android:textColor="@color/colorTitle"
-                android:textSize="12sp"
+                android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

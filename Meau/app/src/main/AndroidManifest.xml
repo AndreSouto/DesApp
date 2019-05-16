@@ -8,11 +8,12 @@
 
     <application
         android:allowBackup="false"
-        android:label="@string/app_name"
+        android:label="Meau"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".Pequi"></activity>
+        <activity android:name=".ConfirmaTemos"></activity>
+        <activity android:name=".Pequi" />
         <activity android:name=".Margot" />
         <activity android:name=".Marie" />
         <activity android:name=".Sancho" />
@@ -40,7 +41,7 @@
         <activity android:name=".CadastroAnimalActivity" />
         <activity
             android:name=".InterActivity"
-            android:parentActivityName=".InitActivity" />
+            android:parentActivityName=".IntroActivity" />
         <activity
             android:name=".PerfilAnimal"
             android:parentActivityName=".InterActivity" />

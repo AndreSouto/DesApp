@@ -1,9 +1,11 @@
 package com.example.meau;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 
 public class ErroSessaoActivity extends AppCompatActivity {
@@ -14,6 +16,10 @@ public class ErroSessaoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_erro_sessao);
+
+        Window window = getWindow();
+        int statusBarColor = Color.parseColor("#FF32C8BE");
+        window.setStatusBarColor(statusBarColor);
 
         // Referência de views
         mBtnCadastro = findViewById(R.id.err_sessao_btn_fazer_cadastro);
