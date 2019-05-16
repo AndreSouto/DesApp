@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ConfirmationActivity">
+
+    <include layout="@layout/template_toolbar" />
+
+    <TextView
+        android:id="@+id/txt_confirmation_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/courgette"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="53sp"
+        tools:text="Eba!" />
+
+    <TextView
+        android:id="@+id/txt_confirmation_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="52dp"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        tools:text="Aqui tem um texto de teste!\n\nÉ assim que tudo irá aparecer." />
+
+    <Button
+        android:id="@+id/bt_confirmation_action"
+        style="@style/AppTheme.ButtonMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="52dp"
+        android:layout_marginRight="52dp"
+        android:layout_marginBottom="24dp"
+        tools:text="Continuar" />
+
+</LinearLayout>

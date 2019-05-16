@@ -1,136 +1,206 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cad_pessoa_CL"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CadastroPessoalActivity">
 
     <include
-        android:id="@+id/toolbar"
+        android:id="@+id/include"
         layout="@layout/toolbarcadastropessoal"
         android:visibility="visible" />
 
-    <android.support.v7.widget.AppCompatEditText
-        android:id="@+id/nome"
-        android:layout_width="380dp"
-        android:layout_height="20pt"
-        android:hint="Nome Completo"
-        android:layout_marginLeft="15dip"
-        android:layout_marginTop="100dip" />
+    <ScrollView
+        android:id="@+id/cad_pessoa_parent_SV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" >
 
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/cad_pessoa_child_CL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="24dp">
 
-    <android.support.v7.widget.AppCompatEditText
-        android:id="@+id/idade"
-        android:layout_width="380dp"
-        android:layout_height="20pt"
-        android:layout_marginLeft="15dip"
-        android:layout_marginTop="140dip"
-        android:hint="Idade" />
+            <LinearLayout
+                android:id="@+id/cad_pessoa_child_LL"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-    <android.support.v7.widget.AppCompatEditText
-        android:id="@+id/email"
-        android:layout_width="380dp"
-        android:layout_height="20pt"
-        android:layout_marginLeft="15dip"
-        android:layout_marginTop="180dip"
-        android:hint="E-mail" />
+                <TextView
+                    android:id="@+id/cad_pessoa_txt_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="@color/colorSecondary"
+                    android:gravity="center"
+                    android:text="@string/cad_pessoa_txt_info"
+                    android:textColor="@color/colorTitle" />
 
-    <android.support.v7.widget.AppCompatEditText
-        android:id="@+id/estado"
-        android:layout_width="380dp"
-        android:layout_height="20pt"
-        android:layout_marginLeft="15dip"
-        android:layout_marginTop="220dip"
-        android:hint="Estado" />
+                <TextView
+                    android:id="@+id/cad_pessoa_txt_infopessoa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:text="@string/cad_pessoa_txt_infopessoa"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorSecondaryDark" />
 
-    <android.support.v7.widget.AppCompatEditText
-        android:id="@+id/cidade"
-        android:layout_width="380dp"
-        android:layout_height="20pt"
-        android:layout_marginLeft="15dip"
-        android:layout_marginTop="260dip"
-        android:hint="Cidade" />
+                <EditText
+                    android:id="@+id/cad_pessoa_edit_nomecompleto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="@string/cad_pessoa_nomecompleto"
+                    android:importantForAutofill="no"
+                    android:inputType="textPersonName"
+                    android:textColorHint="@color/colorHintText"
+                    tools:targetApi="o" />
 
-    <android.support.v7.widget.AppCompatEditText
-        android:id="@+id/endereco"
-        android:layout_width="380dp"
-        android:layout_height="20pt"
-        android:layout_marginLeft="15dip"
-        android:layout_marginTop="300dip"
-        android:hint="Endereço" />
+                <EditText
+                    android:id="@+id/cad_pessoa_edit_idade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:hint="@string/cad_pessoa_idade"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:textColorHint="@color/colorHintText"
+                    tools:targetApi="o" />
 
-    <android.support.v7.widget.AppCompatEditText
-        android:id="@+id/telefone"
-        android:layout_width="380dp"
-        android:layout_height="20pt"
-        android:layout_marginLeft="15dip"
-        android:layout_marginTop="340dip"
-        android:hint="Telefone" />
+                <EditText
+                    android:id="@+id/cad_pessoa_edit_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:hint="@string/cad_pessoa_email"
+                    android:importantForAutofill="no"
+                    android:inputType="textEmailAddress"
+                    android:textColorHint="@color/colorHintText"
+                    tools:targetApi="o" />
 
+                <EditText
+                    android:id="@+id/cad_pessoa_edit_UF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:hint="@string/cad_pessoa_uf"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:textColorHint="@color/colorHintText"
+                    tools:targetApi="o" />
 
-    <Button
-        android:id="@+id/logbutton"
-        android:layout_width="260dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="45dip"
-        android:layout_marginTop="600dip"
-        android:background="@drawable/btnp"
-        android:onClick="cadastrarPessoa"
-        android:text="FAZER CADASTRO" />
+                <EditText
+                    android:id="@+id/cad_pessoa_edit_cidade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:hint="@string/cad_pessoa_cidade"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:textColorHint="@color/colorHintText"
+                    tools:targetApi="o" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="2dip"
-        android:background="#00FFFFFF" />
+                <EditText
+                    android:id="@+id/cad_pessoa_edit_endereco"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:hint="@string/cad_pessoa_endereco"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:textColorHint="@color/colorHintText"
+                    tools:targetApi="o" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dip"
-        android:layout_marginTop="75dip"
-        android:text="INFORMAÇÕES PESSOAIS"
-        android:textColor="@color/fontColor2"
-        android:textSize="18sp" />
+                <EditText
+                    android:id="@+id/cad_pessoa_edit_telefone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:hint="@string/cad_pessoa_telefone"
+                    android:importantForAutofill="no"
+                    android:inputType="phone"
+                    android:textColorHint="@color/colorHintText"
+                    tools:targetApi="o" />
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dip"
-        android:layout_marginTop="400dip"
-        android:text="INFORMAÇÕES DE PERFIL"
-        android:textColor="@color/fontColor2"
-        android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/cad_pessoa_txt_infoperfil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:text="@string/cad_pessoa_infoperfil"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorSecondaryDark" />
 
-    <android.support.v7.widget.AppCompatEditText
-        android:id="@+id/nomeusuario"
-        android:layout_width="380dp"
-        android:layout_height="20pt"
-        android:layout_marginLeft="15dip"
-        android:layout_marginTop="440dip"
-        android:hint="Nome de usuário" />
+                <EditText
+                    android:id="@+id/cad_pessoa_edit_senha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:autofillHints="@string/afh_password"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/colorHintText"
+                    tools:targetApi="o" />
 
-    <android.support.v7.widget.AppCompatEditText
-        android:id="@+id/senha"
-        android:layout_width="380dp"
-        android:layout_height="20pt"
-        android:layout_marginLeft="15dip"
-        android:layout_marginTop="480dip"
-        android:inputType="textPassword"
-        android:hint="Senha" />
+                <EditText
+                    android:id="@+id/cad_pessoa_edit_confsenha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:autofillHints="@string/afh_password"
+                    android:hint="@string/cad_pessoa_confsenha"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/colorHintText"
+                    tools:targetApi="o" />
 
-    <android.support.v7.widget.AppCompatEditText
-        android:id="@+id/confsenha"
-        android:layout_width="380dp"
-        android:layout_height="20pt"
-        android:layout_marginLeft="15dip"
-        android:layout_marginTop="520dip"
-        android:inputType="textPassword"
-        android:hint="Confirmação de senha" />
+                <TextView
+                    android:id="@+id/cad_pessoa_txt_fotoperfil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:text="@string/cad_pessoa_fotoperfil"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorSecondaryDark" />
 
+                <!--<Button-->
+                    <!--android:id="@+id/cad_pessoa_btn_fotoperfil"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="128dp"-->
+                    <!--android:layout_marginTop="32dp"-->
+                    <!--android:backgroundTint="#e6e7e7"-->
+                    <!--android:drawableTop="@android:drawable/ic_menu_add"-->
+                    <!--android:drawableTint="@color/colorGrayBtnText"-->
+                    <!--android:fontFamily="@font/roboto"-->
+                    <!--android:paddingTop="20dp"-->
+                    <!--android:text="@string/adicionar_fotos"-->
+                    <!--android:textColor="@color/colorGrayBtnText" />-->
+            </LinearLayout>
 
-</RelativeLayout>
+            <Button
+                android:id="@+id/cad_pessoa_btn_fazercadastro"
+                style="@style/AppThemeBlue.ButtonMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/cad_pessoa_fazercadastro"
+                android:textColor="@color/colorTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cad_pessoa_child_LL" />
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

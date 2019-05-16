@@ -1,36 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.meau">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:allowBackup="false"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".SucessoCadastroAnimal"></activity>
-        <activity android:name=".AjudaCadastro" />
-        <activity android:name=".ApadrinhamentoCadastro" />
-        <activity android:name=".AdocaoCadastro" />
-        <activity android:name=".Sancho" />
-        <activity android:name=".Marie" />
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Pequi"></activity>
         <activity android:name=".Margot" />
-        <activity android:name=".Alec" />
-        <activity android:name=".Bidu" />
-        <activity android:name=".Pequi" />
-        <activity android:name=".ProfileActivity" />
-        <activity android:name=".Privacidade" />
-        <activity android:name=".CadastroPessoalActivity" />
-        <activity android:name=".CadastroActivity" />
-        <activity android:name=".TermoAdocao" />
-        <activity android:name=".ConfimaTermos" />
+        <activity android:name=".Marie" />
+        <activity android:name=".Sancho" />
         <activity android:name=".AjudarActivity" />
-        <activity android:name=".AdotarActivity" />
-        <activity android:name=".LoginPessoal" />
-        <activity android:name=".IntroActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -38,27 +24,52 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".AcceptActivity" />
+        <activity
+            android:name=".ErroSessaoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Blue" />
+        <activity
+            android:name=".CadastroPessoalActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Blue" />
+        <activity
+            android:name=".PerfilUsuario"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Blue" />
+        <activity android:name=".CadastroAnimalActivity" />
+        <activity
+            android:name=".InterActivity"
+            android:parentActivityName=".InitActivity" />
+        <activity
+            android:name=".PerfilAnimal"
+            android:parentActivityName=".InterActivity" />
+        <activity
+            android:name=".IntroActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Blue" />
+        <activity
+            android:name=".ConfirmationActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".MessageService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
 
         <meta-data
-            android:name="com.facebook.sdk.ApplicationId"
-            android:value="@string/facebook_app_id" />
-
-        <activity
-            android:name="com.facebook.FacebookActivity"
-            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-            android:label="@string/app_name" />
-        <activity
-            android:name="com.facebook.CustomTabActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-
-                <data android:scheme="@string/fb_login_protocol_scheme" />
-            </intent-filter>
-        </activity>
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimary" />
     </application>
 
 </manifest>

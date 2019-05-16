@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_drawer_item_myprofile"
+        android:title="@string/my_profile" />
+    <item
+        android:id="@+id/menu_drawer_item_my_pets"
+        android:title="@string/my_pets" />
+    <item android:title="@string/shortcuts">
+        <menu>
+            <item
+                android:id="@+id/menu_drawer_item_register_pet"
+                android:title="@string/register_pet" />
+            <item
+                android:id="@+id/menu_drawer_item_adotar_pet"
+                android:title="@string/adopter_pet" />
+        </menu>
+    </item>
+</menu>

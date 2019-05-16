@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
+    <!--<color name="colorPrimary">#008577</color>-->
     <color name="LightGreen">#589b9b</color>
     <color name="LightestGreen">#88c9bf</color>
     <color name="LightestGray">#e6e7e8</color>
@@ -12,8 +12,31 @@
     <color name="fontColor5">#434343</color>
     <color name="fontColor6">#f7a800</color>
     <color name="fontColor7">#ffd358</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
-    <color name="background1">#fafafa</color>
+    <!--<color name="colorPrimaryDark">#00574B</color>-->
+    <!--<color name="colorAccent">#D81B60</color>-->
+    <color name="background1">#00FFFFFF</color>
     <color name="fontColor4">#FDD258</color>
+
+    <color name="colorPrimary">#ffd358</color>
+    <color name="colorPrimaryDark">#fa9e00</color>
+    <color name="colorPrimaryLght">#FDE399</color>
+    <color name="colorAccent">#569C9B</color>
+
+    <color name="colorSecondary">#cfe9e5</color>
+    <color name="colorSecondaryDark">#88C9BF</color>
+
+    <color name="colorTitle">#434343</color>
+    <color name="colorTitleTelaUsuario">#589b9b</color>
+    <color name="colorOrangeSubtitle">#f7a800</color>
+    <color name="colorHintText">#bdbdbd</color>
+    <color name="colorGrayBtnText">#757575</color>
+
+    <color name="splash">#f5a900</color>
+
+    <color name="colorYellowTitleFont">#f7a800</color>
+    <color name="colorTextFont">#757575</color>
+    <color name="colorYellowButton">#fdcf58</color>
+    <color name="colorHorizontalDivider">#e0e0e0</color>
+    <color name="colorAppBackground">#fafafa</color>
+
 </resources>
