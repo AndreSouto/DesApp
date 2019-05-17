@@ -8,6 +8,7 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.RadioButton;
@@ -33,6 +34,10 @@ public class AdocaoCadastro extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adocao_cadastro);
+
+        Window window = getWindow();
+        int statusBarColor = Color.parseColor("#FFFDC72E");
+        window.setStatusBarColor(statusBarColor);
 
         ajuda = (Button)findViewById(R.id.ajuda);
         colocarad = (Button)findViewById(R.id.colocar_adocao);
@@ -81,39 +86,39 @@ public class AdocaoCadastro extends AppCompatActivity {
     private Animal getAttrAnimal(){
         Animal anm = new Animal();
 
-        String nomeanimal = getTextvalue(R.id.nomeanimal);
+        String nomeanimal = getTextvalue(R.id.cad_animal_edit_nomedoanimal);
         anm.SetNome(nomeanimal);
-        String especie = getRadiovalue(R.id.especie);
+        String especie = getRadiovalue(R.id.cad_animal_RG_especie);
         anm.SetEspecie(especie);
-        String sexo = getRadiovalue(R.id.sexo);
+        String sexo = getRadiovalue(R.id.cad_animal_RG_sexo);
         anm.SetSexo(sexo);
-        String porte = getRadiovalue(R.id.porte);
+        String porte = getRadiovalue(R.id.cad_animal_RG_porte);
         anm.SetPorte(porte);
-        String idade = getRadiovalue(R.id.idade);
+        String idade = getRadiovalue(R.id.cad_animal_RG_idade);
         anm.SetIdade(idade);
-        boolean brinc = getCheckedBvalue(R.id.brincalhao);
+        boolean brinc = getCheckedBvalue(R.id.cad_animal_CHKB_temperamento_brincalhao);
         anm.SetBrincalhao(brinc);
-        boolean timido = getCheckedBvalue(R.id.timido);
+        boolean timido = getCheckedBvalue(R.id.cad_animal_CHKB_temperamento_timido);
         anm.SetTimido(timido);
-        boolean calmo = getCheckedBvalue(R.id.calmo);
+        boolean calmo = getCheckedBvalue(R.id.cad_animal_CHKB_temperamento_calmo);
         anm.SetCalmo(calmo);
-        boolean guarda = getCheckedBvalue(R.id.guarda);
+        boolean guarda = getCheckedBvalue(R.id.cad_animal_CHKB_temperamento_guarda);
         anm.SetGuarda(guarda);
-        boolean amoroso = getCheckedBvalue(R.id.amoroso);
+        boolean amoroso = getCheckedBvalue(R.id.cad_animal_CHKB_temperamento_amoroso);
         anm.SetAmoroso(amoroso);
-        boolean preguicoso = getCheckedBvalue(R.id.preguiçoso);
+        boolean preguicoso = getCheckedBvalue(R.id.cad_animal_CHKB_temperamento_preguicoso);
         anm.SetPreguicoso(preguicoso);
-        boolean vacinado = getCheckedBvalue(R.id.vacinado);
+        boolean vacinado = getCheckedBvalue(R.id.cad_animal_CHKB_saude_vacinado);
         anm.SetVacinado(vacinado);
-        boolean vermifugado = getCheckedBvalue(R.id.vermifugado);
+        boolean vermifugado = getCheckedBvalue(R.id.cad_animal_CHKB_saude_vermifugado);
         anm.SetVermifugado(vermifugado);
-        boolean castrado = getCheckedBvalue(R.id.castrado);
+        boolean castrado = getCheckedBvalue(R.id.cad_animal_CHKB_saude_castrado);
         anm.SetCastrado(castrado);
-        boolean doente = getCheckedBvalue(R.id.doente);
+        boolean doente = getCheckedBvalue(R.id.cad_animal_CHKB_saude_doente);
         anm.SetDoente(doente);
-        String doencas = getTextvalue(R.id.doencas);
+        String doencas = getTextvalue(R.id.cad_animal_edit_doencas);
         anm.SetDoencas(doencas);
-        String hist = getTextvalue(R.id.historia);
+        String hist = getTextvalue(R.id.cad_animal_txt_sobre);
         anm.SetHist(hist);
 
         FirebaseUser currentFirebaseUser = FirebaseAuth.getInstance().getCurrentUser() ;

@@ -106,7 +106,7 @@ public class CadastroPessoalActivity extends AppCompatActivity {
         boolean r = saveFirebase(getText(view));
 
         if (r) {
-            Intent intent = new Intent(this, LoginPessoal.class);
+            Intent intent = new Intent(this, IntroActivity.class);
             startActivity(intent);
         }
     }

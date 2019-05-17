@@ -7,10 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class IntroActivity extends AppCompatActivity {
 
@@ -65,8 +67,16 @@ public class IntroActivity extends AppCompatActivity {
 
     /* Changing screen */
     public void LoginPessoalScreen(View view) {
-        Intent intent = new Intent(this, LoginPessoal.class);
-        startActivity(intent);
+        if( mAuth.getCurrentUser() != null )
+        {
+            FirebaseAuth.getInstance().signOut();
+            login.setText("Login");
+        }
+        else
+        {
+            Intent intent = new Intent(this, LoginPessoal.class);
+            startActivity(intent);
+        }
     }
 
     /* Changing screen */
@@ -75,7 +85,7 @@ public class IntroActivity extends AppCompatActivity {
         Intent intent;
         FirebaseUser currentUser = mAuth.getCurrentUser();
         if (currentUser != null) {
-            intent = new Intent(this, MainFActivity.class);
+            intent = new Intent(this, AdocaoCadastro.class);
         }
         else {
             intent = new Intent(this, CadastroActivity.class);

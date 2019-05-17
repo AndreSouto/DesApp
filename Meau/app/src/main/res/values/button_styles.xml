@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Botão Principal/Laranja -->
+    <style name="AppTheme.ButtonMain" parent="@android:style/Widget.Material.Button.Colored">
+        <item name="android:backgroundTint">@color/colorPri</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:width">232dp</item>
+
+    </style>
+
+    <!-- Botão Azul -->
+    <style name="AppThemeBlue.ButtonMain" parent="@android:style/Widget.Material.Button.Colored">
+        <item name="android:backgroundTint">@color/colorSec</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:width">232dp</item>
+
+    </style>
+</resources>

@@ -26,6 +26,7 @@ public class Animal {
     private int tipo;
     private String fotos;
     private String uid;
+    private boolean available = true;
 
     public Animal(){}
 
@@ -100,6 +101,14 @@ public class Animal {
 
     public void setUid(String uid){ this.uid = uid;}
     public String getUid() {return this.uid;}
+
+    public boolean isAvailable() {
+        return available;
+    }
+
+    public void setAvailable(boolean available) {
+        this.available = available;
+    }
 
 
 }

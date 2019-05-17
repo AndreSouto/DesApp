@@ -1,5 +1,133 @@
 <resources>
-    <string name="app_name">Meau</string>
-    <string name="facebook_app_id">959543264251285</string>
-    <string name="fb_login_protocol_scheme">fb959543264251285</string>
+        <string name="app_name">Meau</string>
+        <string name="open_drawer">Abrir</string>
+        <string name="close_drawer">Abrir</string>
+        <string name="hello">Olá!</string>
+        <string name="description_main">Bem vindo ao Meau!\nAqui você pode adotar, doar e ajudar\ncães e gatos com facilidade.\nQual o seu interesse?</string>
+        <string name="adopt">Adotar</string>
+        <string name="register_animal">Cadastrar Animal</string>
+        <string name="login">Login</string>
+        <string name="drw_meau_marca_contdesc">Logomarca do aplicativo Meau</string>
+        <string name="password">Senha</string>
+        <string name="afh_password">password</string>
+        <string name="my_profile">Meu Perfil</string>
+        <string name="my_pets">Meus pets</string>
+        <string name="favorites">Favoritos</string>
+        <string name="chat">Chat</string>
+        <string name="shortcuts">Atalhos</string>
+        <string name="register_pet">Cadastrar um pet</string>
+        <string name="adopter_pet">Adotar um pet</string>
+        <string name="help_pet">Ajudar um pet</string>
+        <string name="patronize_pet">Apadrinhar um pet</string>
+        <string name="info">Informações</string>
+        <string name="tips">Dicas</string>
+        <string name="events">Eventos</string>
+        <string name="legislation">Legislação</string>
+        <string name="term_adoption">Termo de Adoção</string>
+        <string name="adoption_stories">Histórias de Adoção</string>
+        <string name="setup">Configurações</string>
+        <string name="privacity">Privacidade</string>
+        <string name="ado_o">Adoção</string>
+        <string name="nome_do_animal">NOME DO ANIMAL</string>
+        <string name="nome_do_animal_lc">Nome do animal</string>
+        <string name="fotos_do_animal">FOTOS DO ANIMAL</string>
+        <string name="adicionar_fotos">adicionar fotos</string>
+        <string name="esp_cie">ESPÉCIE</string>
+        <string name="cachorro">Cachorro</string>
+        <string name="gato">Gato</string>
+        <string name="sexo">SEXO</string>
+        <string name="macho">Macho</string>
+        <string name="f_mea">Fêmea</string>
+        <string name="porte">PORTE</string>
+        <string name="pequeno">Pequeno</string>
+        <string name="m_dio">Médio</string>
+        <string name="grande">Grande</string>
+        <string name="idade">IDADE</string>
+        <string name="filhote">Filhote</string>
+        <string name="adulto">Adulto</string>
+        <string name="idoso">Idoso</string>
+        <string name="temperamento">TEMPERAMENTO</string>
+        <string name="brincalh_o">Brincalhão</string>
+        <string name="t_mido">Tímido</string>
+        <string name="calmo">Calmo</string>
+        <string name="guarda">Guarda</string>
+        <string name="amoroso">Amoroso</string>
+        <string name="pregui_oso">Preguiçoso</string>
+        <string name="saude">SAUDE</string>
+        <string name="vacinado">Vacinado</string>
+        <string name="vermifugado">Vermifugado</string>
+        <string name="castrado">Castrado</string>
+        <string name="doente">Doente</string>
+        <string name="doen_as_do_animal">Doenças do Animal</string>
+        <string name="exig_ncias_para_ado_o">EXIGÊNCIAS PARA ADOÇÃO</string>
+        <string name="termo_de_ado_o">Termo de Adoção</string>
+        <string name="fotos_da_casa">Fotos da Casa</string>
+        <string name="visita_pr_via">Visita Prévia</string>
+        <string name="acompanhamento_p_s_ado_o">Acompanhamento pós Adoção</string>
+        <string name="sobre_o_animal">SOBRE O ANIMAL</string>
+        <string name="sobre_o_animal_lc">Sobre o animal</string>
+        <string name="colocar_para_ado_o">COLOCAR PARA ADOÇÃO</string>
+
+
+        <string name="CD_dog">Dog</string>
+        <string name="local">LOCALIZAÇÃO</string>
+        <string name="samambaia_sul_distrito_federal">Samambaia Sul - Distrito Federal</string>
+        <string name="castrado1">CASTRADO</string>
+        <string name="vacinado1">VACINADO</string>
+        <string name="Noo">Não</string>
+        <string name="exigencias">EXIGÊNCIAS DO DOADOR</string>
+        <string name="termos">Termo de adoção, fotos da casa, visita prévia e acompanhamento durante três semanas</string>
+        <string name="mais_sobre">MAIS SOBRE %s</string>
+        <string name="Bidu_da">Bidu é um cachorro muito dócil e de fácil convivência. Adora caminhadas e se dá muito bem com crianças.</string>
+        <string name="pretendo_adotar">PRETENDO ADOTAR</string>
+        <string name="medio">Médio</string>
+        <string name="vermifugado1">VERMIFUGADO</string>
+        <string name="yess">Sim</string>
+        <string name="doencas">DOENÇAS</string>
+        <string name="nenhuma">Nenhuma</string>
+        <string name="bidu">Bidu</string>
+
+
+        <string name="cad_pessoa_txt_info">As informações preenchidas serão divulgadas\n apenas para a pessoa com a qual você realizar\n o processo de adoção e/ou apadrinhamento,\n após a formalização do processo.</string>
+        <string name="cad_pessoa_txt_infopessoa">Informações Pessoais</string>
+        <string name="cad_pessoa_nomecompleto">Nome completo</string>
+        <string name="cad_pessoa_idade">Idade</string>
+        <string name="cad_pessoa_email">E-mail</string>
+        <string name="cad_pessoa_uf">Estado</string>
+        <string name="cad_pessoa_cidade">Cidade</string>
+        <string name="cad_pessoa_endereco">Endereço</string>
+        <string name="cad_pessoa_telefone">Telefone</string>
+        <string name="cad_pessoa_infoperfil">Informações de Perfil</string>
+        <string name="cad_pessoa_confsenha">Confirmar senha</string>
+        <string name="cad_pessoa_fotoperfil">Foto de Perfil</string>
+        <string name="cad_pessoa_fazercadastro">Fazer Cadastro</string>
+
+        <string name="andre_santos">André Santos</string>
+        <string name="historias">Histórias</string>
+        <string name="nome_completo">NOME COMPLETO</string>
+        <string name="email">EMAIL</string>
+        <string name="endereco">ENDEREÇO</string>
+        <string name="telefone">TELEFONE</string>
+        <string name="historico">HISTÓRICO</string>
+        <string name="andr_santos_de_oliveira">André Santos de Oliveira</string>
+        <string name="_11_anos">11 anos</string>
+        <string name="andre_souza_gmail_com">andre_souza@gmail.com</string>
+        <string name="noroeste_distrito_federal">Noroeste - Distrito Federal</string>
+        <string name="srpn_trecho_2">SRPN Trecho 2</string>
+        <string name="_61_99957_4219">(61) 99957-4219</string>
+        <string name="nenhuma_adocao">Nenhuma adoção</string>
+        <string name="login_necessary">Login Necessário</string>
+
+
+        <string name="err_sessao_txt_oops">Ops!</string>
+        <string name="err_sessao_msg_erro">Você não pode realizar esta ação sem\npossuir um cadastro.</string>
+        <string name="err_sessao_txt_japossui">Já possui cadastro?</string>
+
+        <string name="init_sair">SAIR</string>
+
+        <string name="perfil_animal_tornar_disponível">Tornar disponível</string>
+        <string name="perfil_animal_tornar_indisponível">Tornar indisponível</string>
+        <string name="perfil_animal_ver_interessados">Ver interessados</string>
+        <string name="txt_crop_image">Cortar Imagem</string>
+
 </resources>

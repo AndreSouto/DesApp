@@ -19,7 +19,8 @@
     <color name="white">#fff</color>
     <color name="corLetraButtons">#434343</color>
     <color name="colorPrimaryLght">#FDE399</color>
-    <color name="colorTitle">#434343</color>
+    <color name="colorPri">#ffd358</color>
+    <color name="colorSec">#88C9BF</color>
 
     <color name="navigation_drawer_header">#88C9BF</color>
     <color name="navigation_drawer_primary_item">#FEE29B</color>
@@ -28,6 +29,12 @@
     <color name="corLetraTextView">#757575</color>
     <color name="corInputText">#bdbdbd</color>
     <color name="backGroundApp">#fafafa</color>
+
+    <color name="colorTitle">#434343</color>
+    <color name="colorTitleTelaUsuario">#589b9b</color>
+    <color name="colorOrangeSubtitle">#f7a800</color>
+    <color name="colorHintText">#bdbdbd</color>
+    <color name="colorGrayBtnText">#757575</color>
 
 
     <color name="first_menu_section_header">#fff</color>
