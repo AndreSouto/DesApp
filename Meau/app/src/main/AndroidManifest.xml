@@ -15,6 +15,7 @@
         tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".MainFActivity"></activity>
         <activity android:name=".MyPetsFragmentAdapter" />
+        <activity android:name=".MyPetsActivity" />
         <activity android:name=".AnimalFragment" />
         <activity android:name=".SucessoCadastroAnimal" />
         <activity android:name=".AjudaCadastro" />

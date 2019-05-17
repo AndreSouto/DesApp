@@ -32,7 +32,7 @@ public class PetDatabaseHelper {
 
     // Obtém os animais do usuário com Uid específico
     public static void getPetWithUserUid(String uid, ValueEventListener eventListener) {
-        DatabaseFirebaseHelper.getDatabaseReference(DatabaseFirebaseHelper.PETS).orderByChild("userUid").equalTo(uid).addListenerForSingleValueEvent(eventListener);
+        DatabaseFirebaseHelper.getDatabaseReference(DatabaseFirebaseHelper.PETS).orderByChild("uid").equalTo(uid).addListenerForSingleValueEvent(eventListener);
     }
 
     // Obtém todos os animais

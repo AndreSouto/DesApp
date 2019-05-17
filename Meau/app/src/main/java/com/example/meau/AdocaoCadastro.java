@@ -178,7 +178,7 @@ public class AdocaoCadastro extends AppCompatActivity {
     public boolean saveFirebase(final Animal obj){
 
         FirebaseDatabase.getInstance().getReference("Animals")
-               .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
+               .child(obj.getNome())
                .setValue(obj).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {

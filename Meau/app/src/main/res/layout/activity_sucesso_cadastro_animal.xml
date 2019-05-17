@@ -56,16 +56,16 @@ em contato!"
             />
 
 
-
         <Button
-            android:layout_marginTop="75pt"
+            android:id="@+id/button"
             android:layout_width="232dp"
             android:layout_height="44dp"
-            android:layout_marginBottom="24dp"
             android:layout_marginLeft="40dp"
-            android:text="MEUS PETS"
+            android:layout_marginTop="75pt"
+            android:layout_marginBottom="24dp"
             android:background="@drawable/btnp_yellow"
-            />
+            android:onClick="MeusPets"
+            android:text="MEUS PETS" />
 
     </LinearLayout>
 

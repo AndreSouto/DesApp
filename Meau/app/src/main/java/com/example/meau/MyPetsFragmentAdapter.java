@@ -34,7 +34,7 @@ public class MyPetsFragmentAdapter extends RecyclerView.Adapter<DefaultPetViewHo
         return new DefaultPetViewHolder(view, new ClickInterface() {
             @Override
             public void onClick(View view, int position) {
-                Intent intent = new Intent(mContext, Sancho.class);
+                Intent intent = new Intent(mContext, IntroActivity.class);
                 Bundle bundle = new Bundle();
                 bundle.putSerializable(Animal.class.getName(), mList.get(position));
                 intent.putExtras(bundle);
@@ -51,6 +51,7 @@ public class MyPetsFragmentAdapter extends RecyclerView.Adapter<DefaultPetViewHo
         defaultPetViewHolder.gender.setText(petModel.getSexo());
         defaultPetViewHolder.age.setText(petModel.getIdade());
         defaultPetViewHolder.postage.setText(petModel.getPorte());
+        defaultPetViewHolder.image.setImageResource(R.drawable.alec);
     }
 
     @Override

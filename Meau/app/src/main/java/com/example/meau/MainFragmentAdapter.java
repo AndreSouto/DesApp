@@ -96,6 +96,7 @@ public class MainFragmentAdapter extends RecyclerView.Adapter<DefaultPetViewHold
         defaultPetViewHolder.gender.setText(petModel.getSexo());
         defaultPetViewHolder.age.setText(petModel.getIdade());
         defaultPetViewHolder.postage.setText(petModel.getPorte());
+        defaultPetViewHolder.image.setImageResource(R.drawable.alec);
     }
 
     @Override
