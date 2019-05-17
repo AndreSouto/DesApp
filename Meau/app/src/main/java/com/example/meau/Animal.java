@@ -1,9 +1,10 @@
 package com.example.meau;
 
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Animal {
+public class Animal implements Serializable {
 
     private static long id=0;
     private String nome;

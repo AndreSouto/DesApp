@@ -9,11 +9,21 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.example.meau.R;
 import com.example.meau.ClickInterface;
 import com.example.meau.DefaultPetViewHolder;
 import com.example.meau.Animal;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
@@ -35,6 +45,45 @@ public class MainFragmentAdapter extends RecyclerView.Adapter<DefaultPetViewHold
         return new DefaultPetViewHolder(view, new ClickInterface() {
             @Override
             public void onClick(View view, int position) {
+
+                final String uid;
+
+                FirebaseUser currentFirebaseUser = FirebaseAuth.getInstance().getCurrentUser() ;
+                uid = currentFirebaseUser.getUid();
+
+                final Animal obj = mList.get(position);
+                obj.setUid(uid);
+
+                FirebaseDatabase database = FirebaseDatabase.getInstance();
+                final DatabaseReference databaseReference = database.getReference();
+                databaseReference.child("Animals").addValueEventListener(new ValueEventListener() {
+
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+
+                        Iterable<DataSnapshot> children = dataSnapshot.getChildren();
+
+                        for (DataSnapshot child : children){
+                            Animal anm = child.getValue(Animal.class);
+
+                            if (anm.getNome().equals(obj.getNome())){
+                                DatabaseReference dr = child.getRef();
+                                dr.child("uid").setValue(uid);
+                                dr.child("available").setValue(false);
+                            }
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+                });
+                Intent intent = new Intent(mContext, IntroActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putSerializable(Animal.class.getName(), mList.get(position));
+                intent.putExtras(bundle);
+                mContext.startActivity(intent);
             }
         });
     }

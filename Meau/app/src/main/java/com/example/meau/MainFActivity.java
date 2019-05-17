@@ -19,8 +19,7 @@ import com.example.meau.AnimalFragment;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class MainFActivity extends AppCompatActivity {
-    DrawerLayout mDrawerLayout;
-    Toolbar mToolbar;
+
     private FirebaseAuth mAuth;
 
     @Override
@@ -63,8 +62,5 @@ public class MainFActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-
-        // Inicializa a Navigation
-        //initializeNavigationDrawer();
     }
 }

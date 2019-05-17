@@ -84,7 +84,7 @@ public class ProfileActivity extends AppCompatActivity {
 
     /* Changing activity when touching anywhere on the screen */
     public void cadastroScreen(View view) {
-        Intent intent = new Intent(this, AdocaoCadastro.class);
+        Intent intent = new Intent(this, IntroActivity.class);
         startActivity(intent);
     }
 }

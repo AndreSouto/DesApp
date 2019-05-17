@@ -10,7 +10,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.meau.Animal;
-//import com.example.meau.PerfilAnimal;
 import com.example.meau.ClickInterface;
 import com.example.meau.DefaultPetViewHolder;
 
@@ -35,11 +34,11 @@ public class MyPetsFragmentAdapter extends RecyclerView.Adapter<DefaultPetViewHo
         return new DefaultPetViewHolder(view, new ClickInterface() {
             @Override
             public void onClick(View view, int position) {
-//                Intent intent = new Intent(mContext, PerfilAnimal.class);
-//                Bundle bundle = new Bundle();
-//                bundle.putSerializable(Animal.class.getName(), mList.get(position));
-//                intent.putExtras(bundle);
-//                mContext.startActivity(intent);
+                Intent intent = new Intent(mContext, Sancho.class);
+                Bundle bundle = new Bundle();
+                bundle.putSerializable(Animal.class.getName(), mList.get(position));
+                intent.putExtras(bundle);
+                mContext.startActivity(intent);
             }
         });
     }
