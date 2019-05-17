@@ -5,8 +5,8 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class DatabaseFirebaseHelper {
 
-    public static final String USERS = "users";
-    public static final String PETS = "pets";
+    public static final String USERS = "Users";
+    public static final String PETS = "Animals";
     public static final String PET_USER_INTEREST = "petUserInterest";
     private static FirebaseDatabase firebaseDatabase;
 

@@ -9,7 +9,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.bumptech.glide.Glide;
+import com.example.meau.Animal;
+//import com.example.meau.PerfilAnimal;
+import com.example.meau.ClickInterface;
+import com.example.meau.DefaultPetViewHolder;
 
 import java.util.ArrayList;
 
@@ -32,25 +35,23 @@ public class MyPetsFragmentAdapter extends RecyclerView.Adapter<DefaultPetViewHo
         return new DefaultPetViewHolder(view, new ClickInterface() {
             @Override
             public void onClick(View view, int position) {
-                Intent intent = new Intent(mContext, PerfilAnimal.class);
-                Bundle bundle = new Bundle();
-                bundle.putSerializable(Animal.class.getName(), mList.get(position));
-                intent.putExtras(bundle);
-                mContext.startActivity(intent);
+//                Intent intent = new Intent(mContext, PerfilAnimal.class);
+//                Bundle bundle = new Bundle();
+//                bundle.putSerializable(Animal.class.getName(), mList.get(position));
+//                intent.putExtras(bundle);
+//                mContext.startActivity(intent);
             }
         });
     }
 
     @Override
     public void onBindViewHolder(@NonNull DefaultPetViewHolder defaultPetViewHolder, int i) {
-        Animal animal = mList.get(i);
+        Animal petModel = mList.get(i);
 
-        defaultPetViewHolder.title.setText(animal.getName());
-        defaultPetViewHolder.gender.setText(animal.getGender());
-        defaultPetViewHolder.age.setText(animal.getAge());
-        defaultPetViewHolder.postage.setText(animal.getPostage());
-        defaultPetViewHolder.city.setText(animal.getCity());
-        Glide.with(mContext).load(animal.getImageUrl()).into(defaultPetViewHolder.image);
+        defaultPetViewHolder.title.setText(petModel.getNome());
+        defaultPetViewHolder.gender.setText(petModel.getSexo());
+        defaultPetViewHolder.age.setText(petModel.getIdade());
+        defaultPetViewHolder.postage.setText(petModel.getPorte());
     }
 
     @Override

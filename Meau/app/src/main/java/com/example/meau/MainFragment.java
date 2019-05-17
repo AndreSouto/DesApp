@@ -10,6 +10,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.meau.MainFragmentAdapter;
+import com.example.meau.PetDatabaseHelper;
+import com.example.meau.UserHelper;
+import com.example.meau.MainActivity;
+import com.example.meau.Animal;
+import com.example.meau.R;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.ValueEventListener;
@@ -37,7 +45,6 @@ public class MainFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-//        ((InterActivity) getActivity()).setTitleToolbar(R.string.adopt);
 
         mList = new ArrayList<>();
 
@@ -60,16 +67,17 @@ public class MainFragment extends Fragment {
                 if (dataSnapshot.getValue() == null) return;
 
                 String uid, uuid;
-                Animal animal;
+                Animal petModel;
 
-                uid = UserHelper.getUserModel(getContext()).getUid();
+                FirebaseUser currentFirebaseUser = FirebaseAuth.getInstance().getCurrentUser() ;
+                uid = currentFirebaseUser.getUid();
 
                 mList.clear();
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
-                    animal = snapshot.getValue(Animal.class);
-                    uuid = animal.getUserUid();
+                    petModel = snapshot.getValue(Animal.class);
+                    uuid = petModel.getUid();
 
-                    if (!uid.matches(uuid) && animal.isAvailable()) mList.add(animal);
+                    mList.add(petModel);
                 }
                 mAdapter.setList(mList);
             }

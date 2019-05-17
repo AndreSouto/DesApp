@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".CadastroActivity">
+
+<include
+    android:id="@+id/toolbar"
+    layout="@layout/toolbar"
+    android:visibility="visible" />
+
+<TextView
+    android:id="@+id/warning"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="135dp"
+    android:layout_marginTop="150dp"
+    android:fontFamily="@font/courgetteregular"
+    android:text="Ops!"
+    android:textSize="30dp"
+    android:visibility="visible" />
+
+    <Button
+        android:id="@+id/loginpessoal"
+        android:layout_width="261dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dip"
+        android:layout_marginTop="435dip"
+        android:background="@drawable/btnp"
+        android:onClick="LoginPessoalScreen"
+        android:text="FAZER LOGIN"
+        android:textSize="12dp"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/cadastrpessoal"
+        android:layout_width="261dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dip"
+        android:layout_marginTop="310dip"
+        android:background="@drawable/btnp"
+        android:onClick="CadastrarScreen"
+        android:text="FAZER CADASTRO"
+        android:textSize="12dp" />
+
+<TextView
+    android:id="@+id/wmessage"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="250dp"
+    android:layout_marginLeft="35dp"
+    android:textSize="7pt"
+    android:fontFamily="@font/courgetteregular"
+    android:text="Você não pode realizar esta ação sem possuir cadastro" />
+
+<TextView
+    android:id="@+id/wasking"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="405dp"
+    android:layout_marginLeft="105dp"
+    android:fontFamily="@font/courgetteregular"
+    android:text="Já possui cadastro?" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="2dip"
+        android:background="#00FFFFFF"
+        android:onClick="introScreen" />
+
+</RelativeLayout>

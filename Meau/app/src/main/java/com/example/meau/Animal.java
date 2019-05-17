@@ -1,227 +1,105 @@
 package com.example.meau;
 
-import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Animal implements Serializable {
-    private String userUid, name, gender, age, postage, city, imageUrl, disease, temperament, requiriments, about, uid;
-    private boolean castrated, dewormed, vaccinated, available;
+public class Animal {
 
-    public Animal() {
-        // Construtor padrão necessário para usar objeto no Firebase
-    }
+    private static long id=0;
+    private String nome;
+    private String especie;
+    private String sexo;
+    private String porte;
+    private String idade;
+    private boolean brincalhao;
+    private boolean timido;
+    private boolean calmo;
+    private boolean guarda;
+    private boolean amoroso;
+    private boolean preguicoso;
+    private boolean vacinado;
+    private boolean vermifugado;
+    private boolean castrado;
+    private boolean doente;
+    private String doencas;
+    private String hist;
+    private int tipo;
+    private String fotos;
+    private String uid;
 
-    public Animal(String name, String gender, String age, String postage, String city, String imageUrl, String disease, String temperament, String requiriments, String about, boolean castrated, boolean dewormed, boolean vaccinated) {
-        this.name = name;
-        this.gender = gender;
-        this.age = age;
-        this.postage = postage;
-        this.city = city;
-        this.imageUrl = imageUrl;
-        this.disease = disease;
-        this.temperament = temperament;
-        this.requiriments = requiriments;
-        this.about = about;
-        this.castrated = castrated;
-        this.dewormed = dewormed;
-        this.vaccinated = vaccinated;
-    }
-
-    public Animal(String name, String gender, String age, String postage, String city, String imageUrl, String uid) {
-        this.name = name;
-        this.gender = gender;
-        this.age = age;
-        this.postage = postage;
-        this.city = city;
-        this.imageUrl = imageUrl;
-        this.uid = uid;
-    }
-
-    public Animal(String userUid, String name, String gender, String age, String postage, String city, String imageUrl, String disease, String temperament, String requiriments, String about, boolean castrated, boolean dewormed, boolean vaccinated) {
-        this.userUid = userUid;
-        this.name = name;
-        this.gender = gender;
-        this.age = age;
-        this.postage = postage;
-        this.city = city;
-        this.imageUrl = imageUrl;
-        this.disease = disease;
-        this.temperament = temperament;
-        this.requiriments = requiriments;
-        this.about = about;
-        this.uid = uid;
-        this.castrated = castrated;
-        this.dewormed = dewormed;
-        this.vaccinated = vaccinated;
-    }
-
-    public Animal(String userUid, String name, String gender, String age, String postage, String city, String imageUrl, String disease, String temperament, String requiriments, String about, boolean castrated, boolean dewormed, boolean vaccinated, boolean available) {
-        this.userUid = userUid;
-        this.name = name;
-        this.gender = gender;
-        this.age = age;
-        this.postage = postage;
-        this.city = city;
-        this.imageUrl = imageUrl;
-        this.disease = disease;
-        this.temperament = temperament;
-        this.requiriments = requiriments;
-        this.about = about;
-        this.castrated = castrated;
-        this.dewormed = dewormed;
-        this.vaccinated = vaccinated;
-        this.available = available;
-    }
+    public Animal(){}
 
     public Map<String, Object> toMap() {
         Map<String, Object> map = new HashMap<>();
 
         map.put("uid", getUid());
-        map.put("name", getName());
-        map.put("gender", getGender());
-        map.put("age", getAge());
-        map.put("postage", getPostage());
-        map.put("city", getCity());
-        map.put("imageUrl", getImageUrl());
-        map.put("disease", getDisease());
-        map.put("temperament", getTemperament());
-        map.put("requiriments", getRequiriments());
-        map.put("about", getAbout());
-        map.put("castrated", isCastrated());
-        map.put("dewormed", isDewormed());
-        map.put("vaccinated", isVaccinated());
-        map.put("userUid", getUserUid());
-        map.put("available", isAvailable());
+        map.put("name", getNome());
+        map.put("gender", getSexo());
+        map.put("age", getIdade());
+        map.put("postage", getEspecie());
+        map.put("disease", getDoencas());
 
         return map;
     }
 
-    public String getName() {
-        return name;
+    public void SetNome(String nome){ this.nome = nome;}
+    public String getNome() {return this.nome;}
+    public void SetEspecie(String especie){ this.especie = especie;}
+    public String getEspecie() {return this.especie;}
+    public void SetSexo(String sexo){ this.sexo = sexo;}
+    public String getSexo(){ return this.sexo;}
+    public void SetPorte(String porte) {this.porte = porte;}
+    public String getPorte(){ return this.porte;}
+    public void SetIdade(String idade) { this.idade = idade;}
+    public String getIdade() {return this.idade;}
+    public void SetDoencas(String doencas) {this.doencas = doencas;}
+    public String getDoencas() {return this.doencas;}
+    public void SetHist(String hist) {this.hist = hist;}
+    public String getHist() {return this.hist;}
+
+    public void SetTipo(int tipo){this.tipo = tipo;}
+    public int getTipo(){return this.tipo;}
+
+    public void SetBrincalhao(boolean brincalhao){ this.brincalhao = brincalhao;}
+    public boolean isBrincalhao() { return this.brincalhao; }
+
+    public void SetTimido(boolean timido) {this.timido = timido;}
+    public boolean isTimido() {return this.timido;}
+
+    public void SetCalmo(boolean calmo) {this.calmo = calmo;}
+    public boolean isCalmo() {return this.calmo;}
+
+    public void SetGuarda(boolean guarda) {this.guarda = guarda;}
+    public boolean isGuarda() {return this.guarda;}
+
+    public void SetAmoroso(boolean amoroso) {this.amoroso = amoroso;}
+    public boolean isAmoroso() {return this.amoroso;}
+
+    public void SetPreguicoso(boolean preguicoso) {this.preguicoso = preguicoso;}
+    public boolean isPreguicoso() {return this.preguicoso;}
+
+    public void SetVacinado(boolean vacinado) {this.vacinado = vacinado;}
+    public boolean isVacinado() {return this.vacinado;}
+
+    public void SetVermifugado(boolean vermifugado) {this.vermifugado = vermifugado;}
+    public boolean isVermifugado() {return this.vermifugado;}
+
+    public void SetCastrado(boolean castrado) {this.castrado = castrado;}
+    public boolean isCastrado() {return this.castrado;}
+
+    public void SetDoente(boolean doente) {this.doente = doente;}
+    public boolean isDoente() {return this.doente;}
+
+    public String getFotos() {
+        return fotos;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setFotos(String fotos) {
+        this.fotos = fotos;
     }
 
-    public String getGender() {
-        return gender;
-    }
+    public void setUid(String uid){ this.uid = uid;}
+    public String getUid() {return this.uid;}
 
-    public void setGender(String gender) {
-        this.gender = gender;
-    }
 
-    public String getAge() {
-        return age;
-    }
-
-    public void setAge(String age) {
-        this.age = age;
-    }
-
-    public String getPostage() {
-        return postage;
-    }
-
-    public void setPostage(String postage) {
-        this.postage = postage;
-    }
-
-    public String getCity() {
-        return city;
-    }
-
-    public void setCity(String city) {
-        this.city = city;
-    }
-
-    public String getImageUrl() {
-        return imageUrl;
-    }
-
-    public void setImageUrl(String imageUrl) {
-        this.imageUrl = imageUrl;
-    }
-
-    public String getDisease() {
-        return disease;
-    }
-
-    public void setDisease(String disease) {
-        this.disease = disease;
-    }
-
-    public String getTemperament() {
-        return temperament;
-    }
-
-    public void setTemperament(String temperament) {
-        this.temperament = temperament;
-    }
-
-    public String getRequiriments() {
-        return requiriments;
-    }
-
-    public void setRequiriments(String requiriments) {
-        this.requiriments = requiriments;
-    }
-
-    public String getAbout() {
-        return about;
-    }
-
-    public void setAbout(String about) {
-        this.about = about;
-    }
-
-    public boolean isCastrated() {
-        return castrated;
-    }
-
-    public void setCastrated(boolean castrated) {
-        this.castrated = castrated;
-    }
-
-    public boolean isDewormed() {
-        return dewormed;
-    }
-
-    public void setDewormed(boolean dewormed) {
-        this.dewormed = dewormed;
-    }
-
-    public boolean isVaccinated() {
-        return vaccinated;
-    }
-
-    public void setVaccinated(boolean vaccinated) {
-        this.vaccinated = vaccinated;
-    }
-
-    public String getUid() {
-        return uid;
-    }
-
-    public void setUid(String uid) {
-        this.uid = uid;
-    }
-
-    public String getUserUid() {
-        return userUid;
-    }
-
-    public void setUserUid(String userUid) {
-        this.userUid = userUid;
-    }
-
-    public boolean isAvailable() {
-        return available;
-    }
-
-    public void setAvailable(boolean available) {
-        this.available = available;
-    }
 }

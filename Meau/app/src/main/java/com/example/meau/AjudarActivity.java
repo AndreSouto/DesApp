@@ -1,12 +1,17 @@
 package com.example.meau;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
+import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
+import android.view.WindowManager;
 import android.widget.ImageButton;
+
+import static java.security.AccessController.getContext;
 
 public class AjudarActivity extends AppCompatActivity {
 

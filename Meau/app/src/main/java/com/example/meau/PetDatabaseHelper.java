@@ -1,22 +1,28 @@
 package com.example.meau;
 
+import com.example.meau.DatabaseFirebaseHelper;
+import com.example.meau.Animal;
+import com.example.meau.Usuario;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class PetDatabaseHelper {
 
     // Cria o animal no banco
-    public static void createPet(Animal animal, OnSuccessListener successListener) {
-        DatabaseReference reference = DatabaseFirebaseHelper.getDatabaseReference(DatabaseFirebaseHelper.PETS);
-
-        animal.setUid(reference.push().getKey());
-        reference.child(animal.getUid()).setValue(animal.toMap()).addOnSuccessListener(successListener);
-    }
+//    public static void createPet(Animal petModel, OnSuccessListener successListener) {
+//        DatabaseReference reference = DatabaseFirebaseHelper.getDatabaseReference(DatabaseFirebaseHelper.PETS);
+//
+//        petModel.setUid(reference.push().getKey());
+//        reference.child(petModel.getUid()).setValue(petModel.toMap()).addOnSuccessListener(successListener);
+//    }
 
     // Atualiza os dados do animal
-    public static void updatePet(Animal animal, OnSuccessListener successListener) {
-        DatabaseFirebaseHelper.getDatabaseReference(DatabaseFirebaseHelper.PETS).child(animal.getUid()).setValue(animal.toMap()).addOnSuccessListener(successListener);
+    public static void updatePet(Animal petModel, OnSuccessListener successListener) {
+        DatabaseFirebaseHelper.getDatabaseReference(DatabaseFirebaseHelper.PETS).child(petModel.getUid()).setValue(petModel.toMap()).addOnSuccessListener(successListener);
     }
 
     // Obtém dados do animal com Uid específica

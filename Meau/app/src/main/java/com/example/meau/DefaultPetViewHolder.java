@@ -41,3 +41,4 @@ public class DefaultPetViewHolder extends RecyclerView.ViewHolder implements Vie
         clickInterface.onClick(view, getAdapterPosition());
     }
 }
+

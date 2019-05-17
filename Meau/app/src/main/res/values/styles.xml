@@ -1,22 +1,55 @@
 <resources>
 
-    <!-- Tema Principal -->
+    <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <!-- Tema Secundário -->
-    <style name="AppTheme.Blue" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="colorPrimary">@color/colorSecondary</item>
-        <item name="colorPrimaryDark">@color/colorSecondaryDark</item>
-        <item name="colorAccent">@color/colorSecondaryDark</item>
+    <style name="edttext">
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:textColor">@color/GrayLightest</item>
+        <item name="android:backgroundTint">@color/GrayLightest</item>
+    </style>
+
+    <style name="edttext2">
+        <item name="android:textColor">@color/GrayLightest</item>
+        <item name="android:backgroundTint">@color/GrayLightest</item>
+    </style>
+
+
+    <style name="llyt1">
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+
+    <style name="llyt2">
+        <item name="android:layout_marginTop">28dp</item>
+    </style>
+
+    <style name="bh">
+        <item name="android:layout_marginTop">28dp</item>
+        <item name="android:textColor">@color/LightGray</item>
+        <item name="android:buttonTint">@color/LightGray</item>
+    </style>
+
+    <style name="bh2">
+        <item name="android:layout_marginTop">28dp</item>
+        <item name="android:textColor">@color/GrayLightest</item>
+        <item name="android:buttonTint">@color/GrayLightest</item>
+    </style>
+
+    <style name="firstlinearbox">
+        <item name="android:textColor">@color/LightGray</item>
+        <item name="android:buttonTint">@color/LightGray</item>
     </style>
     
-    <!-- Tela Cheia -->
-    <style name="AppTheme.FullScreen" parent="AppTheme">
-        <item name="android:windowFullscreen">true</item>
+    <style name="linearbox">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textColor">@color/LightGray</item>
+        <item name="android:buttonTint">@color/LightGray</item>
     </style>
 
 </resources>

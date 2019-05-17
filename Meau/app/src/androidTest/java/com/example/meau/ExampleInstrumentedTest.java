@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.dap.meau", appContext.getPackageName());
+        assertEquals("com.example.meau", appContext.getPackageName());
     }
 }

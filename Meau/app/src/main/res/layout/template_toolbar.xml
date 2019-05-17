@@ -1,11 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/toolbar"
     android:layout_width="match_parent"
-    android:layout_height="?attr/actionBarSize"
-    android:background="?attr/colorPrimary"
-    android:elevation="4dp"
-    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-    app:titleTextColor="@color/colorTitle"/>
+    android:layout_height="70dp"
+    android:background="@color/amareloApp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:titleTextAppearance="@style/TextAppearance.AppCompat">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="5"
+        android:background="@drawable/ic_arrow_back" />
+
+    <TextView
+        android:id="@+id/Topintitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Adotar"
+        android:textColor="@color/fontColor1"
+        android:textSize="10pt" />
+
+</android.support.v7.widget.Toolbar>
