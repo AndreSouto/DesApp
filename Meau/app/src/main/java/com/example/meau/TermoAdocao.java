@@ -33,7 +33,7 @@ public class TermoAdocao extends AppCompatActivity {
 
     /* Changing activity when touching anywhere on the screen */
     public void AdotarScreen(View view) {
-        Intent intent = new Intent(this, AdotarActivity.class);
+        Intent intent = new Intent(this, MainFActivity.class);
         startActivity(intent);
     }
 

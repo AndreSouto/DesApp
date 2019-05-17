@@ -84,7 +84,8 @@ public class CadastroPessoalActivity extends AppCompatActivity {
                                                         "Registration completed", Toast.LENGTH_LONG).show();
 
                                     } else {
-                                        //display a failure message
+                                        Toast.makeText(CadastroPessoalActivity.this,
+                                                "Registration completed", Toast.LENGTH_LONG).show();
                                     }
                                 }
                             });
@@ -106,7 +107,7 @@ public class CadastroPessoalActivity extends AppCompatActivity {
         boolean r = saveFirebase(getText(view));
 
         if (r) {
-            Intent intent = new Intent(this, LoginPessoal.class);
+            Intent intent = new Intent(this, IntroActivity.class);
             startActivity(intent);
         }
     }

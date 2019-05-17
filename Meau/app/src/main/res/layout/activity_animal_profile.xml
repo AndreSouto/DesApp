@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnimalProfile">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbaradotar"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAppBackground"
+            android:backgroundTint="@color/colorAppBackground"
+            android:paddingBottom="24dp">
+
+            <ImageView
+                android:id="@+id/perfil_animal_img_fotoanimal"
+                android:layout_width="0dp"
+                android:layout_height="184dp"
+                android:contentDescription="@string/CD_dog"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@drawable/alec" />
+
+            <TextView
+                android:id="@+id/perfil_animal_txt_title_sexo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/sexo"
+                android:textColor="@color/colorYellowTitleFont"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/perfil_animal_txt_nome" />
+
+            <TextView
+                android:id="@+id/perfil_animal_txt_sexo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorTextFont"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/perfil_animal_txt_title_sexo"
+                tools:text="@string/macho" />
+
+
+            <View
+                android:id="@+id/perfil_animal_divider_4"
+                android:layout_width="395dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorHorizontalDivider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/perfil_animal_txt_sexo" />
+
+            <TextView
+                android:id="@+id/perfil_animal_txt_title_about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/mais_sobre"
+                android:textAllCaps="true"
+                android:textColor="@color/colorYellowTitleFont"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/perfil_animal_divider_4" />
+
+            <TextView
+                android:id="@+id/perfil_animal_txt_about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/perfil_animal_txt_title_about"
+                tools:text="@string/Bidu_da" />
+
+            <Button
+                android:id="@+id/perfil_animal_btn_adotar"
+                style="@style/AppTheme.ButtonMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:width="232dp"
+                android:onClick="Adopt"
+                android:text="ADOTAR"
+                android:textColor="@color/colorTitle"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/perfil_animal_txt_about" />
+
+            <TextView
+                android:id="@+id/perfil_animal_txt_title_porte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/porte"
+                android:textColor="@color/colorYellowTitleFont"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/perfil_animal_txt_title_sexo"
+                app:layout_constraintTop_toBottomOf="@+id/perfil_animal_txt_nome" />
+
+            <TextView
+                android:id="@+id/perfil_animal_txt_porte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorTextFont"
+                app:layout_constraintStart_toEndOf="@+id/perfil_animal_txt_title_sexo"
+                app:layout_constraintTop_toBottomOf="@+id/perfil_animal_txt_title_porte"
+                tools:text="@string/medio" />
+
+            <TextView
+                android:id="@+id/perfil_animal_txt_title_idade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/idade"
+                android:textColor="@color/colorYellowTitleFont"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/perfil_animal_txt_title_porte"
+                app:layout_constraintTop_toBottomOf="@+id/perfil_animal_txt_nome" />
+
+            <TextView
+                android:id="@+id/perfil_animal_txt_idade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorTextFont"
+                app:layout_constraintStart_toEndOf="@+id/perfil_animal_txt_title_porte"
+                app:layout_constraintTop_toBottomOf="@+id/perfil_animal_txt_title_idade"
+                tools:text="@string/adulto" />
+
+
+            <TextView
+                android:id="@+id/perfil_animal_txt_nome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/bidu"
+                android:textColor="#434343"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/perfil_animal_img_fotoanimal" />
+
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

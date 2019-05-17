@@ -1,10 +1,12 @@
 package com.example.meau;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.view.Window;
 import android.widget.TextView;
 
@@ -78,5 +80,11 @@ public class ProfileActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+    /* Changing activity when touching anywhere on the screen */
+    public void cadastroScreen(View view) {
+        Intent intent = new Intent(this, IntroActivity.class);
+        startActivity(intent);
     }
 }

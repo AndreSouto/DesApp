@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SucessoCadastroAnimal">
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/toolbar_cadastro_animal"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="69dp"
+        android:layout_marginRight="52dp"
+        android:layout_marginLeft="52dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginBottom="52dp"
+            android:textColor="@color/fontColor7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eba!"
+            android:textSize="26pt"
+            android:fontFamily="@font/courgetteregular"
+            />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="14dp"
+            android:text="O cadastro do seu pet foi realizado
+com sucesso!"
+            />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="14dp"
+            android:text="Certifique-se que permitiu o envio de
+notificações por push no campo
+privacidade do menu configurações do
+aplicativo. Assim, poderemos te avisar
+assim que alguém interessado entrar
+em contato!"
+            />
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="232dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="75pt"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/btnp_yellow"
+            android:onClick="MeusPets"
+            android:text="MEUS PETS" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

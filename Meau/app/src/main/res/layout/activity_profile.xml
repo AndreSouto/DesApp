@@ -13,7 +13,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="80dp"
         android:layout_marginEnd="4dp"
-        android:background="@drawable/img" />
+        android:background="@drawable/images" />
 
     <include
         android:id="@+id/toolbarprofile"
@@ -212,6 +212,19 @@
         android:layout_marginStart="165dp"
         android:layout_marginBottom="120dp"
         android:text="TextView" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="400dp"
+        android:layout_height="567dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="75dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="@color/background1"
+        android:onClick="cadastroScreen"
+        android:visibility="visible" />
 
 
 </RelativeLayout>

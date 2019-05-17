@@ -7,17 +7,26 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.google.firebase.FirebaseApp;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class IntroActivity extends AppCompatActivity {
 
     Button adt,ajuda,cadastrar,login;
+    private FirebaseAuth mAuth;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro);
+
+        // Initialize Firebase Auth
         FirebaseApp.initializeApp(this);
+        mAuth = FirebaseAuth.getInstance();
 
         Window window = getWindow();
         int statusBarColor = Color.parseColor("#FFFDC72E");
@@ -43,7 +52,7 @@ public class IntroActivity extends AppCompatActivity {
         cadastrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                CadastroPessoalScreen(v);
+                CadastroScreen(v);
             }
         });
 
@@ -58,13 +67,29 @@ public class IntroActivity extends AppCompatActivity {
 
     /* Changing screen */
     public void LoginPessoalScreen(View view) {
-        Intent intent = new Intent(this, LoginPessoal.class);
-        startActivity(intent);
+        if( mAuth.getCurrentUser() != null )
+        {
+            FirebaseAuth.getInstance().signOut();
+            login.setText("Login");
+        }
+        else
+        {
+            Intent intent = new Intent(this, LoginPessoal.class);
+            startActivity(intent);
+        }
     }
 
     /* Changing screen */
-    public void CadastroPessoalScreen(View view) {
-        Intent intent = new Intent(this, CadastroActivity.class);
+    public void CadastroScreen(View view) {
+
+        Intent intent;
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        if (currentUser != null) {
+            intent = new Intent(this, AdocaoCadastro.class);
+        }
+        else {
+            intent = new Intent(this, CadastroActivity.class);
+        }
         startActivity(intent);
     }
 
@@ -75,8 +100,26 @@ public class IntroActivity extends AppCompatActivity {
     }
 
     public void TermoScreen(View view){
-        Intent intent = new Intent(this, TermoAdocao.class);
+
+        Intent intent;
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        if (currentUser != null) {
+            intent = new Intent(this, TermoAdocao.class);
+        }
+        else {
+            intent = new Intent(this, CadastroActivity.class);
+        }
         startActivity(intent);
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        // Check if user is signed in (non-null) and update UI accordingly.
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        if (currentUser != null) {
+            login.setText("LOGOUT");
+        }
     }
 
 }

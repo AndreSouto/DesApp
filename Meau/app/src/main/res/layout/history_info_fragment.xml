@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backGroundApp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/backGroundApp">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cortandounha"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Minnie"
+            android:textColor="#434343"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A minnie foi enctrada na rua machucada a rua pelo Pedro Carvalho. No início ela era arisca e não gostava da companhia de humanos, fossem estes adultos ou crianças. O pedro colou a Minnie para adoção no meau e logo eu me apaixonei! Com muita paciência e carinho consegui conquista-la e hoje ela é uma gatinha muito dócil e amavel."
+            android:textColor="#757575"
+            android:textSize="20sp"
+            android:padding="15dp"
+            android:paddingBottom="5dp"
+            android:gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:layout_marginTop="8dp"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:background="#88c9bf"
+                android:layout_gravity="center"
+                android:text="Vér mais histórias"
+                android:textSize="8pt"
+                android:fontFamily="Roboto"
+                android:padding="3dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/corLetraButtons" />
+
+
+            <Button
+                android:layout_marginTop="8dp"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:background="#88c9bf"
+                android:layout_gravity="center"
+                android:text="Contar história"
+                android:textSize="8pt"
+                android:fontFamily="Roboto"
+                android:padding="3dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/corLetraButtons" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
