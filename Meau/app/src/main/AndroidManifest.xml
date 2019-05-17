@@ -13,7 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".MainFActivity"></activity>
+        <activity android:name=".AnimalProfile"></activity>
+        <activity android:name=".MainFActivity" />
         <activity android:name=".MyPetsFragmentAdapter" />
         <activity android:name=".MyPetsActivity" />
         <activity android:name=".AnimalFragment" />
@@ -44,8 +45,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
     </application>
 
 </manifest>

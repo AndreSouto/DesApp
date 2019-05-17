@@ -84,7 +84,8 @@ public class CadastroPessoalActivity extends AppCompatActivity {
                                                         "Registration completed", Toast.LENGTH_LONG).show();
 
                                     } else {
-                                        //display a failure message
+                                        Toast.makeText(CadastroPessoalActivity.this,
+                                                "Registration completed", Toast.LENGTH_LONG).show();
                                     }
                                 }
                             });

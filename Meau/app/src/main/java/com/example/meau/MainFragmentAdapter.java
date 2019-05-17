@@ -79,7 +79,7 @@ public class MainFragmentAdapter extends RecyclerView.Adapter<DefaultPetViewHold
 
                     }
                 });
-                Intent intent = new Intent(mContext, IntroActivity.class);
+                Intent intent = new Intent(mContext, AnimalProfile.class);
                 Bundle bundle = new Bundle();
                 bundle.putSerializable(Animal.class.getName(), mList.get(position));
                 intent.putExtras(bundle);
